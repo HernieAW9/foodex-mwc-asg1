@@ -1,0 +1,8 @@
+{
+  "name": "foodex-mwc-asg1",
+  "app_id": "bf515e96",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
