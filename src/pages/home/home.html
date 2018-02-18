@@ -1,14 +1,26 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+    <ion-navbar color="custom-color">     
+      <ion-title class="MainTitle">
+       FoodEX
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content>
+  
+    <ion-slides pager style="max-height:200px" autoplay="2000" loop="true" speed="3000" class="slides">
+      <ion-slide>
+        <img src="assets/imgs/BP_DAPUR_PENYET.jpg" class="slide-image"/>       
+      </ion-slide>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
-</ion-content>
+      <ion-slide>
+          <img src="assets/imgs/BP_PIZZAHUT2.jpg" class="slide-image"/>       
+        </ion-slide>
+
+        <ion-slide>
+          <img src="assets/imgs/BP_SECRET.jpg" class="slide-image"/>       
+        </ion-slide>
+    </ion-slides>
+
+    
+  </ion-content>
