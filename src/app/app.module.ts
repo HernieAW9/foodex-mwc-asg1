@@ -9,13 +9,15 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LandingPage } from "../pages/landing/landing";
+import { MenuPage } from '../pages/menu/menu';
 import { FIREBASE_CONFIG } from './firebase.credentials';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    LandingPage
+    LandingPage,
+    MenuPage
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,8 @@ import { FIREBASE_CONFIG } from './firebase.credentials';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    MenuPage
   ],
   providers: [
     StatusBar,

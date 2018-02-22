@@ -1,8 +1,24 @@
 <ion-header>
-    <ion-navbar color="custom-color">     
-      <ion-title class="MainTitle">
-       FoodEX
-      </ion-title>
+    <ion-navbar color="custom-color"> 
+        <ion-buttons left>
+            <button ion-button (click)="goToMenu()">
+              <ion-icon name="menu"></ion-icon>
+            </button>    
+          </ion-buttons> 
+        
+        <div id="title">
+          <img alt="logo" height="40" src="assets/imgs/foodex.png" id="foodex">  
+          <ion-title class="MainTitle">
+          FoodEX
+          </ion-title>
+        </div>
+
+      <ion-buttons right>
+          <button ion-button (click)="goToMenu()">
+            <ion-icon name="md-person"></ion-icon>
+          </button>    
+        </ion-buttons> 
+      
     </ion-navbar>
   </ion-header>
   
@@ -21,6 +37,43 @@
           <img src="assets/imgs/BP_SECRET.jpg" class="slide-image"/>       
         </ion-slide>
     </ion-slides>
+      
+    <div>
+      <div class="place">
+        <ion-icon name="ios-heart"></ion-icon> 
+            <b>Favorite Place</b>
+      </div>
 
+      <div class="place" id="save">
+        <ion-icon name="ios-star"></ion-icon> 
+            <b>Saved Place</b>
+      </div>
+    </div>
+
+      <div id="rv">
+        <button ion-button icon-only><ion-icon name="ios-arrow-dropleft" class="arrow"></ion-icon></button>
+  
+          <ion-slides pager="false" style="max-height:200px" id="recent-slide">  
+          <ion-slide>
+            <img src="assets/imgs/Manhattan_logo.jpg" class="recently" style="height: 60px; width: 60px">
+            <img src="assets/imgs/pastamania_logo.jpeg" class="recently" style="height: 60px; width: 60px">
+             <img src="assets/imgs/pastamania_logo.jpeg" class="recently" style="height: 60px; width: 60px">
+          </ion-slide>
+        </ion-slides>
+        
+        <button ion-button icon-only><ion-icon name="ios-arrow-dropright" class="arrow"></ion-icon> </button>
+      </div>
+
+      <div>
+          <div class="place">
+            <ion-icon name="heart"></ion-icon> 
+                <b>Favorite Place</b>
+          </div>
+    
+          <div class="place" id="save">
+            <ion-icon name="star"></ion-icon> 
+                <b>Saved Place</b>
+          </div>
+        </div>
     
   </ion-content>

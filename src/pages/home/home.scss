@@ -1,7 +1,11 @@
-
-  .MainTitle {
-    text-align: center;
+  #title {
+    display: inline-flex;
+    margin-left: 20px;
   }
+  
+  #foodex {
+    margin-top: 8px;
+}
   
     .slide-image {
       height: 60%;
@@ -13,3 +17,26 @@
     .slides {
       background-color: #C4C4C4
     }
+
+    .place {
+      margin: 10px;
+      height: 130px;
+      width: 130px;
+      display: inline-flex;
+      background-color: #C4C4C4;
+    }
+
+    #save {
+      float: right;
+    }
+
+    #rv {
+      display: inline-flex;
+    }
+
+    .recently {
+      border-radius: 100px;
+    }
+
+    
+
