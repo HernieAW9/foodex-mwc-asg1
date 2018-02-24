@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { SettingPage } from '../setting/setting';
 
 @IonicPage()
 @Component({
@@ -13,6 +14,10 @@ export class MenuPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MenuPage');
+  }
+
+  goToSetting(){
+    this.navCtrl.push(SettingPage);
   }
 
 }

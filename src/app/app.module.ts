@@ -11,6 +11,7 @@ import { HomePage } from '../pages/home/home';
 import { LandingPage } from "../pages/landing/landing";
 import { MenuPage } from '../pages/menu/menu';
 import { ProfilePage } from '../pages/profile/profile';
+import { SettingPage } from '../pages/setting/setting';
 import { FIREBASE_CONFIG } from './firebase.credentials';
 
 @NgModule({
@@ -19,7 +20,8 @@ import { FIREBASE_CONFIG } from './firebase.credentials';
     HomePage,
     LandingPage,
     MenuPage,
-    ProfilePage
+    ProfilePage,
+    SettingPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import { FIREBASE_CONFIG } from './firebase.credentials';
     MyApp,
     HomePage,
     MenuPage,
-    ProfilePage
+    ProfilePage,
+    SettingPage
   ],
   providers: [
     StatusBar,
