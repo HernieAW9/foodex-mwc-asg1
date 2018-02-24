@@ -1,17 +1,15 @@
-  #title {
-    display: inline-flex;
-    margin-left: 20px;
-  }
+page-home{
+  font-family: 'Calibri';
+}
   
   #foodex {
-    margin-top: 8px;
-}
+    width: 60px
+  }
   
     .slide-image {
       height: 60%;
       width: 60%;
-      margin: 3px 0px;
-      
+      margin: 3px 0px
     }
 
     .slides {
@@ -23,19 +21,27 @@
       height: 130px;
       width: 130px;
       display: inline-flex;
-      background-color: #C4C4C4;
+      background-color: #C4C4C4
     }
 
     #save {
-      float: right;
+      float: right
     }
 
     #rv {
-      display: inline-flex;
+      display: inline-flex
+    }
+
+    #slide2 {
+      width: 210px
     }
 
     .recently {
-      border-radius: 100px;
+      border-radius: 100px
+    }
+
+    .textvisit{
+     text-align: center
     }
 
     

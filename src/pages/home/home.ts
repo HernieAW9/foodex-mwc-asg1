@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { Component, ViewChild} from '@angular/core';
+import { NavController, Slides } from 'ionic-angular';
 import { MenuPage } from '../menu/menu';
 import { ProfilePage } from '../profile/profile';
 
@@ -8,7 +8,11 @@ import { ProfilePage } from '../profile/profile';
   templateUrl: 'home.html'
 })
 
+
+
 export class HomePage {
+  @ViewChild('slides') slides: Slides;
+  
     constructor(public navCtrl: NavController) {
   }
 
@@ -19,5 +23,14 @@ export class HomePage {
   goToProfile(){
     this.navCtrl.push(ProfilePage);
   }
+
+  next() {
+    this.slides.slideNext();
+  }
+
+  prev() {
+    this.slides.slidePrev();
+  }
+
 }
 
