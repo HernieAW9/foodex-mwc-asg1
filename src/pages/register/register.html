@@ -1,0 +1,48 @@
+<ion-header>
+
+  <ion-toolbar color="custom-color">
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-list>
+
+        <ion-item>
+          <ion-label floating>Username</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Email</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+      
+        <ion-item>
+          <ion-label floating>Password</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Confirm Password</ion-label>
+            <ion-input type="password"></ion-input>
+          </ion-item>
+      
+      </ion-list>
+
+      <ion-item no-lines>
+          <ion-label>I agree with the
+            <a>Terms</a>
+          </ion-label>
+          <ion-checkbox color="dark" checked="false"></ion-checkbox>
+        </ion-item>
+        
+
+      <button ion-button style="float:left" (click)="goToLanding()">Cancel</button>
+
+      <button ion-button style="float:right">Sign Up</button>
+
+</ion-content>
