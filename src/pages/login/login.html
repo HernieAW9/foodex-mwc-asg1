@@ -10,6 +10,10 @@
 
 <ion-content padding>
 
+    <ion-fab top right edge icon-only>
+        <button ion-fab mini color="dark" (click)="goToLanding()"><ion-icon name="ios-close"></ion-icon></button>
+      </ion-fab>
+
     <ion-list>
 
         <ion-item>
@@ -26,7 +30,7 @@
 
       <button ion-button clear>Forgot password?</button>
 
-      <button ion-button color="primary">Login</button>
+      <button ion-button color="primary" (click)="goToHome()">Login</button>
 
       <ion-footer>
           <ion-toolbar position="bottom">
