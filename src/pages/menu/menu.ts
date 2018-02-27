@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { SettingPage } from '../setting/setting';
+import { NearbyPage } from '../nearby/nearby';
 
 @IonicPage()
 @Component({
@@ -18,6 +19,10 @@ export class MenuPage {
 
   goToSetting(){
     this.navCtrl.push(SettingPage);
+  }
+
+  goToNearby(){
+    this.navCtrl.push(NearbyPage);
   }
 
 }
