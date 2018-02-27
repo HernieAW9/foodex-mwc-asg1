@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 import { CoolPage } from '../cool/cool';
 
 /**
@@ -28,8 +28,9 @@ export class BruneiPage {
   //   console.log("Selected Item", item);
   // }
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController) {
   }
+  
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad BruneiPage');
@@ -37,6 +38,12 @@ export class BruneiPage {
 
   goToCool(){
     this.navCtrl.push(CoolPage);
+    this.loadingCtrl.create({
+      content: 'Please wait...',
+      duration: 3000,
+      dismissOnPageChange: true
+    }).present();
   }
+  
 
 }
