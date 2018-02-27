@@ -9,10 +9,10 @@ import {
 
 
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-sort',
+  templateUrl: 'sort.html'
 })
-export class HomePage {
+export class SortPage {
 
   langs;
   langForm;

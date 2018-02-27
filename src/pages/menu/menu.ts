@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { SettingPage } from '../setting/setting';
 import { NearbyPage } from '../nearby/nearby';
+import { AllrestaurantPage } from '../allrestaurant/allrestaurant';
 
 @IonicPage()
 @Component({
@@ -23,6 +24,10 @@ export class MenuPage {
 
   goToNearby(){
     this.navCtrl.push(NearbyPage);
+  }
+
+  goToAll(){
+    this.navCtrl.push(AllrestaurantPage);
   }
 
 }

@@ -19,6 +19,8 @@ import { FIREBASE_CONFIG } from './firebase.credentials';
 import { NearbyPage } from '../pages/nearby/nearby';
 import { BruneiPage } from '../pages/brunei/brunei';
 import { CoolPage } from '../pages/cool/cool';
+import { SortPage } from '../pages/sort/sort';
+import { AllrestaurantPage } from '../pages/allrestaurant/allrestaurant';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { CoolPage } from '../pages/cool/cool';
     RegisterPage,
     NearbyPage,
     BruneiPage,
-    CoolPage
+    CoolPage,
+    AllrestaurantPage,
+    SortPage
   ],
   imports: [
     BrowserModule,
@@ -54,7 +58,9 @@ import { CoolPage } from '../pages/cool/cool';
     RegisterPage,
     NearbyPage,
     BruneiPage,
-    CoolPage
+    CoolPage,
+    AllrestaurantPage,
+    SortPage
   ],
   providers: [
     StatusBar,
