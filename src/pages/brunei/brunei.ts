@@ -16,17 +16,17 @@ import { CoolPage } from '../cool/cool';
 })
 export class BruneiPage {
 
-  items = [
-    'Ideal Cafe & Grill',
-    'Mamih Sg. Hanching',
-    'Pondok Sari Wangi',
-    'Cool Fahrenheit',
-    'Excapade Sushi',
-  ];
+  // items = [
+  //   'Ideal Cafe & Grill',
+  //   'Mamih Sg. Hanching',
+  //   'Pondok Sari Wangi',
+  //   'Cool Fahrenheit',
+  //   'Excapade Sushi',
+  // ];
 
-  itemSelected(item: string) {
-    console.log("Selected Item", item);
-  }
+  // itemSelected(item: string) {
+  //   console.log("Selected Item", item);
+  // }
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
