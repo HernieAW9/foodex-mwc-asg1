@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { SortPage } from '../sort/sort';
+import { FilterPage } from '../filter/filter';
 
 /**
  * Generated class for the AllrestaurantPage page.
@@ -20,6 +22,14 @@ export class AllrestaurantPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AllrestaurantPage');
+  }
+
+  SortPage(){
+    this.navCtrl.push(SortPage);
+  }
+
+  FilterPage(){
+    this.navCtrl.push(FilterPage);
   }
 
 }

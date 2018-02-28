@@ -12,12 +12,12 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
- 
+<ion-content>
+
   <div id="tabmenu">
-    
+    <button ion-button (click)=SortPage() id="sortbutton" color="blue" ><ion-icon name="arrow-dropup"></ion-icon><ion-icon name="arrow-dropdown"></ion-icon>Sort</button>
+    <button ion-button (click)=FilterPage() id="filterbutton" color="blue"><ion-icon name="options"></ion-icon> Filter</button>
   </div>
-  
 
 </ion-content>
 
