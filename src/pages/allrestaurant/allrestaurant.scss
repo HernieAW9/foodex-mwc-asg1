@@ -10,6 +10,8 @@ page-allrestaurant {
         font-size: 100%;
         font-weight: 100%;
         letter-spacing: 5px;
+        margin-top: 20px;
+                
         
     }
 
@@ -19,7 +21,27 @@ page-allrestaurant {
         font-size: 100%;
         font-weight: 100%;
         letter-spacing: 5px;
+        margin-top: 20px;
     }
 
+    .blck {
+        display: block;
+    }
+    
+    .butang {
+        height: 150px;
+        width: 140px;
+        display: inline-block;
+        margin-top: 30px;
+        margin-left: 10px
+    }
 
+    .text {
+        font-size: 12px;
+    }
+    
+    .type {
+        color: darkgrey;
+        font-size: 10px
+    }
 }
