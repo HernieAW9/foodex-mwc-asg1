@@ -1,30 +1,24 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-import {
-  FormGroup,
-  FormControl
-
-} from '@angular/forms';
+import { SettingPage } from '../setting/setting';
+import { AllrestaurantPage } from '../allrestaurant/allrestaurant';
 
 
+@IonicPage()
 @Component({
   selector: 'page-sort',
-  templateUrl: 'sort.html'
+  templateUrl: 'sort.html',
 })
 export class SortPage {
 
-  langs;
-  langForm;
-
-  constructor() {
-    this.langForm = new FormGroup({
-      "langs": new FormControl({value: 'rust', disabled: false})
-    });
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  doSubmit(event) {
-    console.log('Submitting form', this.langForm.value);
-    event.preventDefault();
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad SortPage');
+  }
+
+  AllrestaurantPage() {
+    this.navCtrl.push(AllrestaurantPage);
   }
 }
