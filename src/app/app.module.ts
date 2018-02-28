@@ -22,6 +22,7 @@ import { CoolPage } from '../pages/cool/cool';
 import { SortPage } from '../pages/sort/sort';
 import { AllrestaurantPage } from '../pages/allrestaurant/allrestaurant';
 import { FilterPage } from '../pages/filter/filter';
+import { CoolpixPage } from '../pages/coolpix/coolpix';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { FilterPage } from '../pages/filter/filter';
     CoolPage,
     AllrestaurantPage,
     SortPage,
-    FilterPage
+    FilterPage,
+    CoolpixPage
   ],
   imports: [
     BrowserModule,
@@ -63,7 +65,8 @@ import { FilterPage } from '../pages/filter/filter';
     CoolPage,
     AllrestaurantPage,
     SortPage,
-    FilterPage
+    FilterPage,
+    CoolpixPage
   ],
   providers: [
     StatusBar,
