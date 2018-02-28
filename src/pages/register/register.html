@@ -9,6 +9,10 @@
 
 <ion-content padding>
 
+    <ion-fab top right edge icon-only>
+        <button ion-fab mini color="dark" (click)="goToLanding()"><ion-icon name="ios-close"></ion-icon></button>
+      </ion-fab>
+
     <ion-list>
 
         <ion-item>
@@ -35,13 +39,10 @@
 
       <ion-item no-lines>
           <ion-label>I agree with the
-            <a>Terms</a>
+            <a>Terms and Conditons</a>
           </ion-label>
           <ion-checkbox color="dark" checked="false"></ion-checkbox>
         </ion-item>
-        
-
-      <button ion-button style="float:left" (click)="goToLanding()">Cancel</button>
 
       <button ion-button style="float:right">Sign Up</button>
 

@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { FIREBASE_CONFIG } from './firebase.credentials';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -15,7 +16,6 @@ import { SettingPage } from '../pages/setting/setting';
 import { MyProfilePage } from '../pages/my-profile/my-profile';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
-import { FIREBASE_CONFIG } from './firebase.credentials';
 import { NearbyPage } from '../pages/nearby/nearby';
 import { BruneiPage } from '../pages/brunei/brunei';
 import { CoolPage } from '../pages/cool/cool';
