@@ -7,7 +7,9 @@
 </ion-header>
 
 <ion-content padding>
-  <button (click)="goToBrunei()" ion-button color="light" large full>
+  <ion-list>
+
+  <!-- <button (click)="goToBrunei()" ion-button color="light" large full>
     <p id="text">Brunei Muara</p>
     <img id="right" src="assets/icon/right.png"/>
   </button>
@@ -24,5 +26,26 @@
   
   <button ion-button color="light" large full>
     <p id="text">Temburong</p>
-    <img id="right4" src="assets/icon/right.png"/></button>
+    <img id="right4" src="assets/icon/right.png"/>
+  </button> -->
+
+  <ion-list>
+      <button (click)="goToBrunei()" ion-item>
+          &nbsp; Brunei Muara
+      </button>
+
+      <button ion-item>
+          &nbsp; Tutong
+      </button>
+
+      <button (click)="goToNearby()" ion-item>
+          &nbsp; Belait
+      </button>
+
+      <button ion-item>
+          &nbsp; Temburong
+      </button>
+   </ion-list> 
+
+  </ion-list>
 </ion-content>
