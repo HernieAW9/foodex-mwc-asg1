@@ -5,6 +5,15 @@
 </ion-header>
 
 <ion-content>
+    <ion-fab top right edge>
+        <button ion-fab mini color="secondary"><ion-icon name="ios-arrow-dropdown"></ion-icon></button>
+        <ion-fab-list>
+          <button ion-fab><ion-icon name="ios-heart"></ion-icon></button>
+          <button ion-fab><ion-icon name="ios-bookmark"></ion-icon></button>
+          <button ion-fab><ion-icon name="ios-locate"></ion-icon></button>
+        </ion-fab-list>
+      </ion-fab>
+
     <ion-grid>
         <ion-row>
           <ion-col><img src="assets/imgs/Cool.png" id="cool"></ion-col>
@@ -32,7 +41,7 @@
 
         <ion-row>
           <ion-col>
-              <button ion-button icon-left large round color="custom-color">
+              <button (click)="goToImages()" ion-button icon-left large round color="custom-color">
                   <ion-icon name="ios-camera"></ion-icon> 
                   Images
                 </button>

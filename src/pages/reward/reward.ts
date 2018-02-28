@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { CoolpixPage } from '../coolpix/coolpix';
 
 /**
- * Generated class for the CoolPage page.
+ * Generated class for the RewardPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,19 +10,16 @@ import { CoolpixPage } from '../coolpix/coolpix';
 
 @IonicPage()
 @Component({
-  selector: 'page-cool',
-  templateUrl: 'cool.html',
+  selector: 'page-reward',
+  templateUrl: 'reward.html',
 })
-export class CoolPage {
+export class RewardPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad CoolPage');
+    console.log('ionViewDidLoad RewardPage');
   }
 
-  goToImages(){
-    this.navCtrl.push(CoolpixPage);
-  }
 }
