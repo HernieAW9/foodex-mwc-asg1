@@ -21,6 +21,7 @@ import { BruneiPage } from '../pages/brunei/brunei';
 import { CoolPage } from '../pages/cool/cool';
 import { SortPage } from '../pages/sort/sort';
 import { AllrestaurantPage } from '../pages/allrestaurant/allrestaurant';
+import { FilterPage } from '../pages/filter/filter';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { AllrestaurantPage } from '../pages/allrestaurant/allrestaurant';
     BruneiPage,
     CoolPage,
     AllrestaurantPage,
-    SortPage
+    SortPage,
+    FilterPage
   ],
   imports: [
     BrowserModule,
@@ -60,7 +62,8 @@ import { AllrestaurantPage } from '../pages/allrestaurant/allrestaurant';
     BruneiPage,
     CoolPage,
     AllrestaurantPage,
-    SortPage
+    SortPage,
+    FilterPage
   ],
   providers: [
     StatusBar,
