@@ -2,14 +2,7 @@
 
   <ion-navbar color="custom-color">
 
-  <div id="header">
-    <ion-title id="title">Menu</ion-title>
-
-    <div id="searchbar">
-    <ion-searchbar id="search"></ion-searchbar>
-    </div>
-
-  </div>
+    <ion-title>Menu</ion-title>
     
   </ion-navbar>
 
@@ -19,7 +12,7 @@
 <ion-content padding>
 
     <ion-list>
-        <button ion-item>
+        <button (click)="goToSearch()" ion-item>
             <ion-icon name="ios-search"></ion-icon>
             &nbsp; Advanced Search
         </button>
