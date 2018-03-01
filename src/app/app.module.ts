@@ -18,7 +18,6 @@ import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
 import { NearbyPage } from '../pages/nearby/nearby';
 import { BruneiPage } from '../pages/brunei/brunei';
-import { CoolPage } from '../pages/cool/cool';
 import { SortPage } from '../pages/sort/sort';
 import { AllrestaurantPage } from '../pages/allrestaurant/allrestaurant';
 import { FilterPage } from '../pages/filter/filter';
@@ -26,6 +25,7 @@ import { CoolpixPage } from '../pages/coolpix/coolpix';
 import { MenulistPage } from '../pages/menulist/menulist';
 import { RewardPage } from '../pages/reward/reward';
 import { IdealPage } from '../pages/ideal/ideal';
+import { PizzaPage } from '../pages/pizza/pizza';
 
 @NgModule({
   declarations: [
@@ -40,7 +40,7 @@ import { IdealPage } from '../pages/ideal/ideal';
     RegisterPage,
     NearbyPage,
     BruneiPage,
-    CoolPage,
+    PizzaPage,
     AllrestaurantPage,
     SortPage,
     FilterPage,
@@ -68,7 +68,7 @@ import { IdealPage } from '../pages/ideal/ideal';
     RegisterPage,
     NearbyPage,
     BruneiPage,
-    CoolPage,
+    PizzaPage,
     AllrestaurantPage,
     SortPage,
     FilterPage,

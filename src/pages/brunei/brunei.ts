@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
-import { CoolPage } from '../cool/cool';
+import { PizzaPage } from '../pizza/pizza';
 import { IdealPage } from '../ideal/ideal';
 
 /**
@@ -37,8 +37,8 @@ export class BruneiPage {
     console.log('ionViewDidLoad BruneiPage');
   }
 
-  goToCool(){
-    this.navCtrl.push(CoolPage);
+  goToPizza(){
+    this.navCtrl.push(PizzaPage);
     this.loadingCtrl.create({
       content: 'Please wait...',
       duration: 3000,
