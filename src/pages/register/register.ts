@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController} from 'ionic-angular';
 import { LandingPage } from '../landing/landing';
-import { HomePage } from '../home/home';
+import { LoginPage } from '../login/login';
 
 @IonicPage()
 @Component({
@@ -10,7 +10,7 @@ import { HomePage } from '../home/home';
 })
 export class RegisterPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController) {
   }
 
   ionViewDidLoad() {
@@ -21,8 +21,13 @@ export class RegisterPage {
     this.navCtrl.push(LandingPage);
   }
 
-  goToHome() {
-    this.navCtrl.push(HomePage);
+  goToLogin() {
+    this.navCtrl.push(LoginPage);
+    this.loadingCtrl.create({
+      content: 'Loading...',
+      duration: 5000,
+      dismissOnPageChange: true
+    }).present();
   }
 
 }

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController} from 'ionic-angular';
 import { MyProfilePage } from '../my-profile/my-profile';
 import { LoginPage } from '../login/login';
 import { RewardPage } from '../reward/reward';
@@ -11,7 +11,7 @@ import { RewardPage } from '../reward/reward';
 })
 export class ProfilePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController) {
   }
 
   ionViewDidLoad() {
@@ -24,6 +24,11 @@ export class ProfilePage {
 
   goToLogin() {
     this.navCtrl.push(LoginPage);
+    this.loadingCtrl.create({
+      content: 'Loading...',
+      duration: 5000,
+      dismissOnPageChange: true
+    }).present();
   }
 
   goToReward(){
