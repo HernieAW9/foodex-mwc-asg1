@@ -44,7 +44,8 @@ import { RewardPage } from '../pages/reward/reward';
     SortPage,
     FilterPage,
     CoolpixPage,
-    MenulistPage
+    MenulistPage,
+    RewardPage
   ],
   imports: [
     BrowserModule,
@@ -70,7 +71,8 @@ import { RewardPage } from '../pages/reward/reward';
     SortPage,
     FilterPage,
     CoolpixPage,
-    MenulistPage
+    MenulistPage,
+    RewardPage
   ],
   providers: [
     StatusBar,
