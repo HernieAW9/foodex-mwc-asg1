@@ -52,7 +52,8 @@ import { IdealmenuPage } from '../pages/idealmenu/idealmenu';
     RewardPage,
     IdealPage,
     IdealpixPage,
-    IdealmenuPage
+    IdealmenuPage,
+    SearchPage
   ],
   imports: [
     BrowserModule,
@@ -82,7 +83,8 @@ import { IdealmenuPage } from '../pages/idealmenu/idealmenu';
     RewardPage,
     IdealPage,
     IdealpixPage,
-    IdealmenuPage
+    IdealmenuPage,
+    SearchPage
   ],
   providers: [
     StatusBar,
