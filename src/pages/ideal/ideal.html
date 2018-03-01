@@ -1,0 +1,127 @@
+<ion-header>
+  <ion-navbar color="custom-color">
+      <ion-title>Ideal Cage & Grill</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-fab top right edge>
+        <button ion-fab mini color="secondary"><ion-icon name="ios-arrow-dropdown"></ion-icon></button>
+        <ion-fab-list>
+          <button ion-fab><ion-icon name="ios-heart"></ion-icon></button>
+          <button ion-fab><ion-icon name="ios-bookmark"></ion-icon></button>
+          <button ion-fab><ion-icon name="ios-locate"></ion-icon></button>
+        </ion-fab-list>
+      </ion-fab>
+
+    <ion-grid>
+        <ion-row>
+          <ion-col><img src="assets/imgs/Pizzahut_logo.jpg" id="cool"></ion-col>
+          
+          <ion-col>
+            <b style="text-align:center; font-size:20px;"> Pizza Hut </b><br>
+            
+            <button ion-button icon-left outline small outline color="secondary">
+                <ion-icon name="ios-information-circle"></ion-icon> 
+                <p style="font-size:8px; text-align: left">Info</p>
+              </button> 
+
+            <button ion-button icon-left outline small outline color="secondary">
+              <ion-icon name="ios-time"></ion-icon> 
+              <p style="font-size:8px; text-align: left">Hours: 9Am - 11PM</p>
+            </button> 
+
+            <button ion-button icon-left outline small color="secondary"><ion-icon name="md-pin"></ion-icon> 
+              <p style="font-size:8px; text-align: left">3 Branches</p>
+            </button>            
+
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+              <button (click)="goToImages()" ion-button icon-left large round color="custom-color">
+                  <ion-icon name="ios-camera"></ion-icon> 
+                  Images
+                </button>
+          </ion-col>
+
+          <ion-col>
+              <button (click)="goToMenulist()" ion-button icon-left large round color="custom-color">
+                  <ion-icon name="ios-book"></ion-icon> 
+                  Menu
+                </button>
+            </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <b>REVIEW</b>
+
+      <ion-card>
+
+          <ion-item>
+            <h2>User_1</h2>
+            <p>12 weeks ago</p>
+          </ion-item>
+        
+          <ion-card-content>
+            <p>Food here is nice!</p>
+          </ion-card-content>
+        
+          <ion-row>
+            <ion-col>
+              <button ion-button icon-left clear small>
+                <ion-icon name="thumbs-up"></ion-icon>
+                <div>12 Likes</div>
+              </button>
+            </ion-col>
+          </ion-row>
+        
+        </ion-card>
+
+        <ion-card>
+
+            <ion-item>
+              <h2>User_2</h2>
+              <p>32 weeks ago</p>
+            </ion-item>
+          
+            <ion-card-content>
+              <p>Food here is nice!</p>
+            </ion-card-content>
+          
+            <ion-row>
+              <ion-col>
+                <button ion-button icon-left clear small>
+                  <ion-icon name="thumbs-up"></ion-icon>
+                  <div>19 Likes</div>
+                </button>
+              </ion-col>
+            </ion-row>
+          
+          </ion-card>
+
+          <ion-card>
+
+              <ion-item>
+                <h2>User_3</h2>
+                <p>85 weeks ago</p>
+              </ion-item>
+            
+              <ion-card-content>
+                <p>Food here is nice!</p>
+              </ion-card-content>
+            
+              <ion-row>
+                <ion-col>
+                  <button ion-button icon-left clear small>
+                    <ion-icon name="thumbs-up"></ion-icon>
+                    <div>4 Likes</div>
+                  </button>
+                </ion-col>
+              </ion-row>
+            
+            </ion-card>
+ 
+
+</ion-content>
