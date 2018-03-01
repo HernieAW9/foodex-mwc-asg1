@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { CoolpixPage } from '../coolpix/coolpix';
+import { MenulistPage } from '../menulist/menulist';
 
 /**
  * Generated class for the CoolPage page.
@@ -25,5 +26,9 @@ export class CoolPage {
 
   goToImages(){
     this.navCtrl.push(CoolpixPage);
+  }
+
+  goToMenulist(){
+    this.navCtrl.push(MenulistPage);
   }
 }

@@ -16,10 +16,10 @@
 
     <ion-grid>
         <ion-row>
-          <ion-col><img src="assets/imgs/Cool.png" id="cool"></ion-col>
+          <ion-col><img src="assets/imgs/Pizzahut_logo.jpg" id="cool"></ion-col>
           
           <ion-col>
-            <b style="text-align:center; font-size:20px;"> Cool Fahrenheit </b>
+            <b style="text-align:center; font-size:20px;"> Pizza Hut </b><br>
             
             <button ion-button icon-left outline small outline color="secondary">
                 <ion-icon name="ios-information-circle"></ion-icon> 
@@ -28,12 +28,11 @@
 
             <button ion-button icon-left outline small outline color="secondary">
               <ion-icon name="ios-time"></ion-icon> 
-              <p style="font-size:8px; text-align: left">Hours: 8Am - 9PM</p>
+              <p style="font-size:8px; text-align: left">Hours: 9Am - 11PM</p>
             </button> 
 
             <button ion-button icon-left outline small color="secondary"><ion-icon name="md-pin"></ion-icon> 
-              <p style="font-size:8px; text-align: left"> No. 7, Block B, 
-                <br> Abdul Razak Complex Gadong.</p>
+              <p style="font-size:8px; text-align: left">3 Branches</p>
             </button>            
 
           </ion-col>
@@ -48,7 +47,7 @@
           </ion-col>
 
           <ion-col>
-              <button ion-button icon-left large round color="custom-color">
+              <button (click)="goToMenulist()" ion-button icon-left large round color="custom-color">
                   <ion-icon name="ios-book"></ion-icon> 
                   Menu
                 </button>
