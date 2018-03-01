@@ -23,6 +23,7 @@ import { SortPage } from '../pages/sort/sort';
 import { AllrestaurantPage } from '../pages/allrestaurant/allrestaurant';
 import { FilterPage } from '../pages/filter/filter';
 import { CoolpixPage } from '../pages/coolpix/coolpix';
+import { RewardPage } from '../pages/reward/reward';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { CoolpixPage } from '../pages/coolpix/coolpix';
     AllrestaurantPage,
     SortPage,
     FilterPage,
-    CoolpixPage
+    CoolpixPage,
+    RewardPage
   ],
   imports: [
     BrowserModule,
@@ -66,7 +68,8 @@ import { CoolpixPage } from '../pages/coolpix/coolpix';
     AllrestaurantPage,
     SortPage,
     FilterPage,
-    CoolpixPage
+    CoolpixPage,
+    RewardPage
   ],
   providers: [
     StatusBar,
