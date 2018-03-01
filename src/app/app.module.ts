@@ -25,13 +25,10 @@ import { CoolpixPage } from '../pages/coolpix/coolpix';
 import { MenulistPage } from '../pages/menulist/menulist';
 import { RewardPage } from '../pages/reward/reward';
 import { IdealPage } from '../pages/ideal/ideal';
-<<<<<<< HEAD
 import { SearchPage } from '../pages/search/search';
-=======
 import { PizzaPage } from '../pages/pizza/pizza';
 import { IdealpixPage } from '../pages/idealpix/idealpix';
 import { IdealmenuPage } from '../pages/idealmenu/idealmenu';
->>>>>>> 73066877dbd954960d230109497d6cbc1250e61c
 
 @NgModule({
   declarations: [
