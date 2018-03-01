@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { SettingPage } from '../setting/setting';
 import { AllrestaurantPage } from '../allrestaurant/allrestaurant';
 
 

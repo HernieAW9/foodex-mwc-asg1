@@ -2,13 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { MyProfilePage } from '../my-profile/my-profile';
 import { LoginPage } from '../login/login';
-
-/**
- * Generated class for the ProfilePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { RewardPage } from '../reward/reward';
 
 @IonicPage()
 @Component({
@@ -30,6 +24,10 @@ export class ProfilePage {
 
   goToLogin() {
     this.navCtrl.push(LoginPage);
+  }
+
+  goToReward(){
+    this.navCtrl.push(RewardPage);
   }
 
 }

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { LandingPage } from '../landing/landing';
+import { HomePage } from '../home/home';
 
 @IonicPage()
 @Component({
@@ -18,6 +19,10 @@ export class RegisterPage {
 
   goToLanding() {
     this.navCtrl.push(LandingPage);
+  }
+
+  goToHome() {
+    this.navCtrl.push(HomePage);
   }
 
 }

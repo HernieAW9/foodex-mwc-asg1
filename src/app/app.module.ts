@@ -24,6 +24,7 @@ import { AllrestaurantPage } from '../pages/allrestaurant/allrestaurant';
 import { FilterPage } from '../pages/filter/filter';
 import { CoolpixPage } from '../pages/coolpix/coolpix';
 import { MenulistPage } from '../pages/menulist/menulist';
+import { RewardPage } from '../pages/reward/reward';
 
 @NgModule({
   declarations: [
