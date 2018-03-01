@@ -1,14 +1,9 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 import { SortPage } from '../sort/sort';
 import { FilterPage } from '../filter/filter';
-
-/**
- * Generated class for the AllrestaurantPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { PizzaPage } from '../pizza/pizza';
+import { IdealPage } from '../ideal/ideal';
 
 @IonicPage()
 @Component({
@@ -17,7 +12,7 @@ import { FilterPage } from '../filter/filter';
 })
 export class AllrestaurantPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController) {
   }
 
   ionViewDidLoad() {
@@ -30,6 +25,24 @@ export class AllrestaurantPage {
 
   FilterPage(){
     this.navCtrl.push(FilterPage);
+  }
+
+  goToPizza(){
+    this.navCtrl.push(PizzaPage);
+    this.loadingCtrl.create({
+      content: 'Please wait...',
+      duration: 3000,
+      dismissOnPageChange: true
+    }).present();
+  }
+
+  goToIdeal(){
+    this.navCtrl.push(IdealPage);
+    this.loadingCtrl.create({
+      content: 'Please wait...',
+      duration: 3000,
+      dismissOnPageChange: true
+    }).present();
   }
 
 }

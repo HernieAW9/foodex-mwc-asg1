@@ -1,4 +1,6 @@
 page-allrestaurant {
+    font-family: calibri;
+}
 
     div#tabmenu{
         text-align: center;
@@ -44,4 +46,9 @@ page-allrestaurant {
         color: darkgrey;
         font-size: 10px
     }
-}
+
+    .image {
+        height: 100px;
+        width: 100px;
+        border-radius: 100px;
+    }

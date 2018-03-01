@@ -1,9 +1,3 @@
-<!--
-  Generated template for the AllrestaurantPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
   <ion-navbar color="custom-color">     
     <ion-title class="MainTitle">
@@ -19,9 +13,13 @@
     <button ion-button (click)=FilterPage() id="filterbutton" color="blue"><ion-icon name="options"></ion-icon> Filter</button>
   </div>
 
+  <div>
+      <ion-note>&nbsp; 14 items found</ion-note>
+  </div>
+
     <button class="butang" ion-button color="light">
       <div class="blck">
-        <img src="assets/imgs/hb.png"/><br>
+        <img class="image" src="assets/imgs/hb.png"/><br>
         <b class="text">Homed Baga</b><br>
         <b class="type">Burgers</b><br>
         <b class="type" >BSB</b> 
@@ -30,7 +28,7 @@
 
     <button class="butang" ion-button color="light">
       <div class="blck">
-        <img src="assets/imgs/kkk.png"/><br>
+        <img class="image" src="assets/imgs/kkk.png"/><br>
         <b class="text">Restaurant KK Koya</b><br>
         <b class="type">Indian</b><br>
         <b class="type">Tutong</b>  
@@ -39,7 +37,7 @@
 
     <button class="butang" ion-button color="light">
       <div class="blck">
-        <img src="assets/imgs/A9.png"/><br>
+        <img class="image" src="assets/imgs/A9.png"/><br>
         <b class="text">A9 Cafe</b><br>
         <b class="type">Burgers</b><br>
         <b class="type">Temburong</b>  
@@ -48,12 +46,102 @@
     
     <button class="butang" ion-button color="light">
       <div class="blck">
-        <img src="assets/imgs/RG.png"/><br>
+        <img class="image" src="assets/imgs/RG.png"/><br>
         <b class="text">Rock Garden</b><br>
         <b class="type">Western</b><br>
         <b class="type">Kuala Belait</b>  
       </div>
     </button>
+
+    <button class="butang" ion-button color="light">
+        <div class="blck">
+          <img class="image" src="assets/imgs/Manhattan_logo.jpg"/><br>
+          <b class="text">Manhattan Fish Market</b><br>
+          <b class="type">Western</b><br>
+          <b class="type">BSB</b>  
+        </div>
+      </button>
+
+      <button class="butang" ion-button color="light">
+          <div class="blck">
+            <img class="image" src="assets/imgs/pastamania_logo.jpeg"/><br>
+            <b class="text">Pastamania</b><br>
+            <b class="type">Italian</b><br>
+            <b class="type">BSB</b>  
+          </div>
+        </button>
+
+        <button class="butang" ion-button color="light">
+            <div class="blck">
+              <img class="image" src="assets/imgs/mauri_logo.jpg"/><br>
+              <b class="text">Prego Mauri</b><br>
+              <b class="type">Italian</b><br>
+              <b class="type">BSB</b>  
+            </div>
+          </button>
+
+          <button class="butang" ion-button color="light">
+              <div class="blck">
+                <img class="image" src="assets/imgs/AlterEgo_logo.jpg"/><br>
+                <b class="text">Alter Ego</b><br>
+                <b class="type">Western, Cafe</b><br>
+                <b class="type">BSB</b>  
+              </div>
+          </button>
+
+          <button class="butang" ion-button color="light">
+              <div class="blck">
+                <img class="image" src="assets/imgs/Kitaro_logo.jpg"/><br>
+                <b class="text">Kitaro</b><br>
+                <b class="type">Japanese</b><br>
+                <b class="type">BSB</b>  
+              </div>
+          </button>
+
+          <button class="butang" (click)="goToIdeal()" ion-button color="light">
+              <div class="blok">
+                <img class="image" src="assets/imgs/ideal.jpg"/><br>
+                <b class="text">Ideal Cafe &amp; Grill</b><br>
+                <b class="type">Malay</b><br>
+                <b class="type">BSB</b>
+              </div>
+            </button>
+            
+            <button class="butang" ion-button color="light">
+              <div class="blck"> 
+                <img class="image" src="assets/imgs/Villa.jpg"/><br>
+                <b class="text">Villa Mauri</b><br>
+                <b class="type">Italian</b><br>
+                <b class="type">BSB</b>
+              </div>
+            </button>
+            
+            <button class="butang" ion-button color="light">
+              <div class="blck">
+                <img class="image" src="assets/imgs/Genki.png"/><br>
+                <b class="text">Genki Teppanyaki</b><br>
+                <b class="type">Japanese</b><br>
+                <b class="type">BSB</b>
+              </div>
+            </button>
+            
+            <button class="butang" (click)="goToPizza()" ion-button color="light"> 
+              <div class="blck">
+                <img class="image" src="assets/imgs/Pizzahut_logo.jpg"/><br>
+                <b class="text">Pizza Hut</b><br>
+                <b class="type">Italian</b><br>
+                <b class="type">BSB</b>
+              </div>
+            </button>
+          
+            <button class="butang" ion-button color="light"> 
+              <div class="blck">
+                <img class="image" src="assets/imgs/sushi.jpg"/><br>
+                <b class="text">Excapade Sushi</b><br>
+                <b class="type">Japanese</b><br>
+                <b class="type">BSB</b>
+              </div>
+            </button>
 
 </ion-content>
 
