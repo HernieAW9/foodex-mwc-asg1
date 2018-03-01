@@ -27,6 +27,7 @@ import { RewardPage } from '../pages/reward/reward';
 import { IdealPage } from '../pages/ideal/ideal';
 import { PizzaPage } from '../pages/pizza/pizza';
 import { IdealpixPage } from '../pages/idealpix/idealpix';
+import { IdealmenuPage } from '../pages/idealmenu/idealmenu';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { IdealpixPage } from '../pages/idealpix/idealpix';
     MenulistPage,
     RewardPage,
     IdealPage,
-    IdealpixPage
+    IdealpixPage,
+    IdealmenuPage
   ],
   imports: [
     BrowserModule,
@@ -78,7 +80,8 @@ import { IdealpixPage } from '../pages/idealpix/idealpix';
     MenulistPage,
     RewardPage,
     IdealPage,
-    IdealpixPage
+    IdealpixPage,
+    IdealmenuPage
   ],
   providers: [
     StatusBar,
