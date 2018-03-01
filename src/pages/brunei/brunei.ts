@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 import { CoolPage } from '../cool/cool';
+import { IdealPage } from '../ideal/ideal';
 
 /**
  * Generated class for the BruneiPage page.
@@ -38,6 +39,15 @@ export class BruneiPage {
 
   goToCool(){
     this.navCtrl.push(CoolPage);
+    this.loadingCtrl.create({
+      content: 'Please wait...',
+      duration: 3000,
+      dismissOnPageChange: true
+    }).present();
+  }
+
+  goToIdeal(){
+    this.navCtrl.push(IdealPage);
     this.loadingCtrl.create({
       content: 'Please wait...',
       duration: 3000,
