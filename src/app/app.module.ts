@@ -51,12 +51,8 @@ import { IdealmenuPage } from '../pages/idealmenu/idealmenu';
     MenulistPage,
     RewardPage,
     IdealPage,
-<<<<<<< HEAD
-    SearchPage
-=======
     IdealpixPage,
     IdealmenuPage
->>>>>>> 73066877dbd954960d230109497d6cbc1250e61c
   ],
   imports: [
     BrowserModule,
@@ -85,12 +81,8 @@ import { IdealmenuPage } from '../pages/idealmenu/idealmenu';
     MenulistPage,
     RewardPage,
     IdealPage,
-<<<<<<< HEAD
-    SearchPage
-=======
     IdealpixPage,
     IdealmenuPage
->>>>>>> 73066877dbd954960d230109497d6cbc1250e61c
   ],
   providers: [
     StatusBar,
