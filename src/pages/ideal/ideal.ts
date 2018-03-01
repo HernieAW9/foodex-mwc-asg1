@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IdealpixPage } from '../idealpix/idealpix';
+import { IdealmenuPage } from '../idealmenu/idealmenu';
 
 /**
  * Generated class for the IdealPage page.
@@ -20,6 +22,14 @@ export class IdealPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad IdealPage');
+  }
+
+  goToImagesideal(){
+    this.navCtrl.push(IdealpixPage);
+  }
+
+  goToIdealmenu(){
+    this.navCtrl.push(IdealmenuPage);
   }
 
 }

@@ -12,16 +12,16 @@ import { MenulistPage } from '../menulist/menulist';
 
 @IonicPage()
 @Component({
-  selector: 'page-cool',
-  templateUrl: 'cool.html',
+  selector: 'page-pizza',
+  templateUrl: 'pizza.html',
 })
-export class CoolPage {
+export class PizzaPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad CoolPage');
+    console.log('ionViewDidLoad PizzaPage');
   }
 
   goToImages(){

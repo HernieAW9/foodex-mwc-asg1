@@ -18,7 +18,6 @@ import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
 import { NearbyPage } from '../pages/nearby/nearby';
 import { BruneiPage } from '../pages/brunei/brunei';
-import { CoolPage } from '../pages/cool/cool';
 import { SortPage } from '../pages/sort/sort';
 import { AllrestaurantPage } from '../pages/allrestaurant/allrestaurant';
 import { FilterPage } from '../pages/filter/filter';
@@ -26,7 +25,13 @@ import { CoolpixPage } from '../pages/coolpix/coolpix';
 import { MenulistPage } from '../pages/menulist/menulist';
 import { RewardPage } from '../pages/reward/reward';
 import { IdealPage } from '../pages/ideal/ideal';
+<<<<<<< HEAD
 import { SearchPage } from '../pages/search/search';
+=======
+import { PizzaPage } from '../pages/pizza/pizza';
+import { IdealpixPage } from '../pages/idealpix/idealpix';
+import { IdealmenuPage } from '../pages/idealmenu/idealmenu';
+>>>>>>> 73066877dbd954960d230109497d6cbc1250e61c
 
 @NgModule({
   declarations: [
@@ -41,7 +46,7 @@ import { SearchPage } from '../pages/search/search';
     RegisterPage,
     NearbyPage,
     BruneiPage,
-    CoolPage,
+    PizzaPage,
     AllrestaurantPage,
     SortPage,
     FilterPage,
@@ -49,7 +54,12 @@ import { SearchPage } from '../pages/search/search';
     MenulistPage,
     RewardPage,
     IdealPage,
+<<<<<<< HEAD
     SearchPage
+=======
+    IdealpixPage,
+    IdealmenuPage
+>>>>>>> 73066877dbd954960d230109497d6cbc1250e61c
   ],
   imports: [
     BrowserModule,
@@ -70,7 +80,7 @@ import { SearchPage } from '../pages/search/search';
     RegisterPage,
     NearbyPage,
     BruneiPage,
-    CoolPage,
+    PizzaPage,
     AllrestaurantPage,
     SortPage,
     FilterPage,
@@ -78,7 +88,12 @@ import { SearchPage } from '../pages/search/search';
     MenulistPage,
     RewardPage,
     IdealPage,
+<<<<<<< HEAD
     SearchPage
+=======
+    IdealpixPage,
+    IdealmenuPage
+>>>>>>> 73066877dbd954960d230109497d6cbc1250e61c
   ],
   providers: [
     StatusBar,
