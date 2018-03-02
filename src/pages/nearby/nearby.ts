@@ -2,13 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 import { BruneiPage } from '../brunei/brunei';
 import {TutongPage } from '../tutong/tutong';
-
-/**
- * Generated class for the NearbyPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { TemburongPage } from '../temburong/temburong';
 
 @IonicPage()
 @Component({
@@ -16,17 +10,6 @@ import {TutongPage } from '../tutong/tutong';
   templateUrl: 'nearby.html',
 })
 export class NearbyPage {
-  
-  items = [
-    'Brunei Muara',
-    'Tutong',
-    'Belait',
-    'Temburong',
-  ];
-
-  itemSelected(item: string) {
-    console.log("Selected Item", item);
-  }
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController) {
   }
@@ -46,6 +29,15 @@ export class NearbyPage {
 
   goToTutong(){
     this.navCtrl.push(TutongPage);
+    this.loadingCtrl.create({
+      content: 'Please wait...',
+      duration: 3000,
+      dismissOnPageChange: true
+    }).present();
+  }
+
+  goToTemburong(){
+    this.navCtrl.push(TemburongPage);
     this.loadingCtrl.create({
       content: 'Please wait...',
       duration: 3000,

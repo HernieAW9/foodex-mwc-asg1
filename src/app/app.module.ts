@@ -30,6 +30,7 @@ import { PizzaPage } from '../pages/pizza/pizza';
 import { IdealpixPage } from '../pages/idealpix/idealpix';
 import { IdealmenuPage } from '../pages/idealmenu/idealmenu';
 import {TutongPage } from '../pages/tutong/tutong';
+import { TemburongPage } from '../pages/temburong/temburong';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import {TutongPage } from '../pages/tutong/tutong';
     IdealpixPage,
     IdealmenuPage,
     SearchPage,
-    TutongPage
+    TutongPage,
+    TemburongPage
   ],
   imports: [
     BrowserModule,
@@ -87,7 +89,8 @@ import {TutongPage } from '../pages/tutong/tutong';
     IdealpixPage,
     IdealmenuPage,
     SearchPage,
-    TutongPage
+    TutongPage,
+    TemburongPage
   ],
   providers: [
     StatusBar,
