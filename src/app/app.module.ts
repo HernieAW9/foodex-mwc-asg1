@@ -31,6 +31,9 @@ import { IdealpixPage } from '../pages/idealpix/idealpix';
 import { IdealmenuPage } from '../pages/idealmenu/idealmenu';
 import {TutongPage } from '../pages/tutong/tutong';
 import { TemburongPage } from '../pages/temburong/temburong';
+import { A9Page } from '../pages/a9/a9';
+import { KawanPage } from '../pages/kawan/kawan';
+import { NtkPage } from '../pages/ntk/ntk';
 
 @NgModule({
   declarations: [
@@ -57,7 +60,10 @@ import { TemburongPage } from '../pages/temburong/temburong';
     IdealmenuPage,
     SearchPage,
     TutongPage,
-    TemburongPage
+    TemburongPage,
+    A9Page,
+    KawanPage,
+    NtkPage
   ],
   imports: [
     BrowserModule,
@@ -90,7 +96,10 @@ import { TemburongPage } from '../pages/temburong/temburong';
     IdealmenuPage,
     SearchPage,
     TutongPage,
-    TemburongPage
+    TemburongPage,
+    A9Page,
+    KawanPage,
+    NtkPage
   ],
   providers: [
     StatusBar,
