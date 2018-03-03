@@ -1,18 +1,18 @@
 <ion-header>
   <ion-navbar color="custom-color">
     <ion-title>
-      Belait
+      Kuala Belait
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
 
     <div>
-        <ion-note>&nbsp; 5 items found</ion-note>
+        <ion-note>&nbsp; 2 items found</ion-note>
       </div>
 
-    <button class="butang" ion-button color="light">
+    <button class="butang" (click)="goToserikandi()" ion-button color="light">
         <div class="blck">
           <img class="image" src="assets/imgs/SKR.jpg"/><br>
           <b class="text">SeriKandi Restaurant</b><br>
@@ -21,7 +21,7 @@
         </div>
       </button>
   
-      <button class="butang" ion-button color="light">
+      <button class="butang" (click)="goToBeanary()" ion-button color="light">
         <div class="blck">
           <img class="image" src="assets/imgs/BNC.jpg"/><br>
           <b class="text">Beanery and Co</b><br>

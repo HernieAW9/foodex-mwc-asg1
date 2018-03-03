@@ -38,6 +38,7 @@ import { NtkPage } from '../pages/ntk/ntk';
 import { MauriPage } from '../pages/mauri/mauri';
 import { MauripixPage } from '../pages/mauripix/mauripix';
 import { BelaitPage } from '../pages/belait/belait';
+import { BeanaryPage } from '../pages/beanary/beanary';
 
 @NgModule({
   declarations: [
@@ -70,7 +71,9 @@ import { BelaitPage } from '../pages/belait/belait';
     NtkPage,
     MauriPage,
     MauripixPage,
-    BelaitPage
+    BelaitPage,
+    BeanaryPage
+
   ],
   imports: [
     BrowserModule,
@@ -110,7 +113,8 @@ import { BelaitPage } from '../pages/belait/belait';
     NtkPage,
     MauriPage,
     MauripixPage,
-    BelaitPage
+    BelaitPage,
+    BeanaryPage
   ],
   providers: [
     StatusBar,
