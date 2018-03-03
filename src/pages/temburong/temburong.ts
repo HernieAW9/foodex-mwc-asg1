@@ -19,8 +19,6 @@ export class TemburongPage {
     console.log('ionViewDidLoad TemburongPage');
   }
 
-<<<<<<< HEAD
-=======
   goToA9(){
     this.navCtrl.push(A9Page);
   }
@@ -33,5 +31,4 @@ export class TemburongPage {
     this.navCtrl.push(NtkPage);
   }
 
->>>>>>> 5bf5a94d0100bf96313c3f73c42df61b4bac99c5
 }
