@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { MauripixPage } from '../mauripix/mauripix';
 
 /**
  * Generated class for the MauriPage page.
@@ -21,5 +22,10 @@ export class MauriPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad MauriPage');
   }
+
+  goToMauripix(){
+    this.navCtrl.push(MauripixPage);
+  }
+
 
 }

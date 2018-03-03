@@ -35,6 +35,7 @@ import { A9Page } from '../pages/a9/a9';
 import { KawanPage } from '../pages/kawan/kawan';
 import { NtkPage } from '../pages/ntk/ntk';
 import { MauriPage } from '../pages/mauri/mauri';
+import { MauripixPage } from '../pages/mauripix/mauripix';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { MauriPage } from '../pages/mauri/mauri';
     A9Page,
     KawanPage,
     NtkPage,
-    MauriPage
+    MauriPage,
+    MauripixPage
   ],
   imports: [
     BrowserModule,
@@ -102,7 +104,8 @@ import { MauriPage } from '../pages/mauri/mauri';
     A9Page,
     KawanPage,
     NtkPage,
-    MauriPage
+    MauriPage,
+    MauripixPage
   ],
   providers: [
     StatusBar,
