@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, LoadingController} from 'ionic-angular';
 import { LandingPage } from '../landing/landing';
-import { LoginPage } from '../login/login';
+import { User } from '../models/user';
+import { AngularFireAuth } from 'angularfire2/auth';
+import { HomePage } from '../home/home';
+
 
 @IonicPage()
 @Component({
@@ -10,7 +13,10 @@ import { LoginPage } from '../login/login';
 })
 export class RegisterPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController) {
+  user = {} as User;
+
+  constructor(private afAuth: AngularFireAuth,
+    public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController) {
   }
 
   ionViewDidLoad() {
@@ -18,16 +24,17 @@ export class RegisterPage {
   }
 
   goToLanding() {
-    this.navCtrl.push(LandingPage);
+    this.navCtrl.push(HomePage);
   }
 
-  goToLogin() {
-    this.navCtrl.push(LoginPage);
-    this.loadingCtrl.create({
-      content: 'Loading...',
-      duration: 5000,
-      dismissOnPageChange: true
-    }).present();
+  async register(user: User) {
+    try{
+    const result = await this.afAuth.auth.createUserWithEmailAndPassword(user.email, user.password);
+    console.log(result);
+  }
+    catch(e) {
+      console.error(e)
+    }
   }
 
 }
