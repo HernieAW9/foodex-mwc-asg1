@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 import { BruneiPage } from '../brunei/brunei';
 import {TutongPage } from '../tutong/tutong';
+import { BelaitPage } from '../belait/belait';
 
 /**
  * Generated class for the NearbyPage page.
@@ -53,4 +54,12 @@ export class NearbyPage {
     }).present();
   }
 
+  goToBelait(){
+    this.navCtrl.push(BelaitPage);
+    this.loadingCtrl.create({
+      content: 'Please wait...',
+      duration: 3000,
+      dismissOnPageChange: true
+    }).present();
+  }
 }
