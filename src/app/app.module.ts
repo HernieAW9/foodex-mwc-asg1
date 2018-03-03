@@ -37,7 +37,11 @@ import { KawanPage } from '../pages/kawan/kawan';
 import { NtkPage } from '../pages/ntk/ntk';
 import { MauriPage } from '../pages/mauri/mauri';
 import { MauripixPage } from '../pages/mauripix/mauripix';
+<<<<<<< HEAD
 import { ResetPasswordPage } from '../pages/reset-password/reset-password';
+=======
+import { BelaitPage } from '../pages/belait/belait';
+>>>>>>> dd5301e6d5ba4fb0593f970a9680b6ec57d721a5
 
 @NgModule({
   declarations: [
@@ -70,7 +74,11 @@ import { ResetPasswordPage } from '../pages/reset-password/reset-password';
     NtkPage,
     MauriPage,
     MauripixPage,
+<<<<<<< HEAD
     ResetPasswordPage
+=======
+    BelaitPage
+>>>>>>> dd5301e6d5ba4fb0593f970a9680b6ec57d721a5
   ],
   imports: [
     BrowserModule,
@@ -110,7 +118,11 @@ import { ResetPasswordPage } from '../pages/reset-password/reset-password';
     NtkPage,
     MauriPage,
     MauripixPage,
+<<<<<<< HEAD
     ResetPasswordPage
+=======
+    BelaitPage
+>>>>>>> dd5301e6d5ba4fb0593f970a9680b6ec57d721a5
   ],
   providers: [
     StatusBar,
