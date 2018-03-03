@@ -37,6 +37,7 @@ import { KawanPage } from '../pages/kawan/kawan';
 import { NtkPage } from '../pages/ntk/ntk';
 import { MauriPage } from '../pages/mauri/mauri';
 import { MauripixPage } from '../pages/mauripix/mauripix';
+import { ResetPasswordPage } from '../pages/reset-password/reset-password';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,8 @@ import { MauripixPage } from '../pages/mauripix/mauripix';
     KawanPage,
     NtkPage,
     MauriPage,
-    MauripixPage
+    MauripixPage,
+    ResetPasswordPage
   ],
   imports: [
     BrowserModule,
@@ -107,7 +109,8 @@ import { MauripixPage } from '../pages/mauripix/mauripix';
     KawanPage,
     NtkPage,
     MauriPage,
-    MauripixPage
+    MauripixPage,
+    ResetPasswordPage
   ],
   providers: [
     StatusBar,
