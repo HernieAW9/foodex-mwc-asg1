@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+<<<<<<< HEAD
 
 /**
  * Generated class for the TemburongPage page.
@@ -7,6 +8,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
+=======
+>>>>>>> 86f263b3c2b1ccaaa1a958c1ca6a0f79429684a6
 import { A9Page } from '../a9/a9';
 import { KawanPage } from '../kawan/kawan';
 import { NtkPage } from '../ntk/ntk';
@@ -26,8 +29,6 @@ export class TemburongPage {
     console.log('ionViewDidLoad TemburongPage');
   }
 
-<<<<<<< HEAD
-=======
   goToA9(){
     this.navCtrl.push(A9Page);
   }
@@ -40,5 +41,4 @@ export class TemburongPage {
     this.navCtrl.push(NtkPage);
   }
 
->>>>>>> 5bf5a94d0100bf96313c3f73c42df61b4bac99c5
 }
