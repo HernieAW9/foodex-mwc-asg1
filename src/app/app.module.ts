@@ -73,8 +73,7 @@ import { BeanaryPage } from '../pages/beanary/beanary';
     MauriPage,
     MauripixPage,
     BelaitPage,
-    BeanaryPage
-
+    BeanaryPage,
     ResetPasswordPage,
     BelaitPage
   ],
