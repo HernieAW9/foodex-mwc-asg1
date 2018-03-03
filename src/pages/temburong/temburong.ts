@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-<<<<<<< HEAD
 
 /**
  * Generated class for the TemburongPage page.
@@ -8,12 +7,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-=======
 import { A9Page } from '../a9/a9';
 import { KawanPage } from '../kawan/kawan';
 import { NtkPage } from '../ntk/ntk';
 
->>>>>>> 5bf5a94d0100bf96313c3f73c42df61b4bac99c5
 
 @IonicPage()
 @Component({
