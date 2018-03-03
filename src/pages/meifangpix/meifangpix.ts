@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { MauripixPage } from '../mauripix/mauripix';
 
 /**
- * Generated class for the MauriPage page.
+ * Generated class for the MeifangpixPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,21 +10,16 @@ import { MauripixPage } from '../mauripix/mauripix';
 
 @IonicPage()
 @Component({
-  selector: 'page-mauri',
-  templateUrl: 'mauri.html',
+  selector: 'page-meifangpix',
+  templateUrl: 'meifangpix.html',
 })
-export class MauriPage {
+export class MeifangpixPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad MauriPage');
+    console.log('ionViewDidLoad MeifangpixPage');
   }
-
-  goToMauripix(){
-    this.navCtrl.push(MauripixPage);
-  }
-
 
 }

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 import { PizzaPage } from '../pizza/pizza';
 import { IdealPage } from '../ideal/ideal';
+import { MauriPage } from '../mauri/mauri';
 
 /**
  * Generated class for the BruneiPage page.
@@ -48,6 +49,15 @@ export class BruneiPage {
 
   goToIdeal(){
     this.navCtrl.push(IdealPage);
+    this.loadingCtrl.create({
+      content: 'Please wait...',
+      duration: 3000,
+      dismissOnPageChange: true
+    }).present();
+  }
+
+  goToMauri(){
+    this.navCtrl.push(MauriPage);
     this.loadingCtrl.create({
       content: 'Please wait...',
       duration: 3000,

@@ -35,6 +35,8 @@ import { TemburongPage } from '../pages/temburong/temburong';
 import { A9Page } from '../pages/a9/a9';
 import { KawanPage } from '../pages/kawan/kawan';
 import { NtkPage } from '../pages/ntk/ntk';
+import { MauriPage } from '../pages/mauri/mauri';
+import { MauripixPage } from '../pages/mauripix/mauripix';
 
 @NgModule({
   declarations: [
@@ -64,7 +66,9 @@ import { NtkPage } from '../pages/ntk/ntk';
     TemburongPage,
     A9Page,
     KawanPage,
-    NtkPage
+    NtkPage,
+    MauriPage,
+    MauripixPage
   ],
   imports: [
     BrowserModule,
@@ -101,7 +105,9 @@ import { NtkPage } from '../pages/ntk/ntk';
     TemburongPage,
     A9Page,
     KawanPage,
-    NtkPage
+    NtkPage,
+    MauriPage,
+    MauripixPage
   ],
   providers: [
     StatusBar,
