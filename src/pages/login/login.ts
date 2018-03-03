@@ -1,15 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 import { RegisterPage } from '../register/register';
-import { HomePage } from '../home/home';
 import { LandingPage } from '../landing/landing';
-
-/**
- * Generated class for the LoginPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { User } from '../models/user';
+import { AngularFireAuth } from 'angularfire2/auth'
+import { HomePage } from '../home/home';
 
 @IonicPage()
 @Component({
@@ -17,8 +12,10 @@ import { LandingPage } from '../landing/landing';
   templateUrl: 'login.html',
 })
 export class LoginPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController) {
+  user = {} as User;
+  
+  constructor(private afAuth: AngularFireAuth,
+    public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController) {
   }
 
   ionViewDidLoad() {
@@ -29,13 +26,16 @@ export class LoginPage {
     this.navCtrl.push(RegisterPage);
   }
 
-  goToHome() {
-    this.navCtrl.push(HomePage);
-    this.loadingCtrl.create({
-      content: 'Loading...',
-      duration: 5000,
-      dismissOnPageChange: true
-    }).present();
+ async login(user: User) {
+    try{
+      const result = this.afAuth.auth.signInWithEmailAndPassword(user.email, user.password);
+      if(result){
+        this.navCtrl.push(HomePage);
+      }
+    }
+    catch(e){
+      console.error(e);
+    }
   }
 
   goToLanding() {
