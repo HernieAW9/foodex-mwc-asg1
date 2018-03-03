@@ -37,6 +37,7 @@ import { KawanPage } from '../pages/kawan/kawan';
 import { NtkPage } from '../pages/ntk/ntk';
 import { MauriPage } from '../pages/mauri/mauri';
 import { MauripixPage } from '../pages/mauripix/mauripix';
+import { ResetPasswordPage } from '../pages/reset-password/reset-password';
 import { BelaitPage } from '../pages/belait/belait';
 import { BeanaryPage } from '../pages/beanary/beanary';
 
@@ -71,9 +72,14 @@ import { BeanaryPage } from '../pages/beanary/beanary';
     NtkPage,
     MauriPage,
     MauripixPage,
+<<<<<<< HEAD
     BelaitPage,
     BeanaryPage
 
+=======
+    ResetPasswordPage,
+    BelaitPage
+>>>>>>> 93b557644c54e48d2ee91b96cc651f4bbab8634e
   ],
   imports: [
     BrowserModule,
@@ -113,8 +119,13 @@ import { BeanaryPage } from '../pages/beanary/beanary';
     NtkPage,
     MauriPage,
     MauripixPage,
+<<<<<<< HEAD
     BelaitPage,
     BeanaryPage
+=======
+    ResetPasswordPage,
+    BelaitPage
+>>>>>>> 93b557644c54e48d2ee91b96cc651f4bbab8634e
   ],
   providers: [
     StatusBar,

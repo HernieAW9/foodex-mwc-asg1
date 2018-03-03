@@ -5,6 +5,7 @@ import { LandingPage } from '../landing/landing';
 import { User } from '../models/user';
 import { AngularFireAuth } from 'angularfire2/auth'
 import { HomePage } from '../home/home';
+import { ResetPasswordPage } from '../reset-password/reset-password';
 
 @IonicPage()
 @Component({
@@ -40,6 +41,10 @@ export class LoginPage {
 
   goToLanding() {
     this.navCtrl.push(LandingPage);
+  }
+
+  forgot() {
+    this.navCtrl.push(ResetPasswordPage);
   }
 
 }

@@ -18,18 +18,6 @@ import { MauriPage } from '../mauri/mauri';
 })
 export class BruneiPage {
 
-  // items = [
-  //   'Ideal Cafe & Grill',
-  //   'Mamih Sg. Hanching',
-  //   'Pondok Sari Wangi',
-  //   'Cool Fahrenheit',
-  //   'Excapade Sushi',
-  // ];
-
-  // itemSelected(item: string) {
-  //   console.log("Selected Item", item);
-  // }
-
   constructor(public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController) {
   }
   
