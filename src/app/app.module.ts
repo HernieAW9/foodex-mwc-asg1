@@ -47,9 +47,7 @@ import { PutehmenuPage } from '../pages/putehmenu/putehmenu';
 import { ResetPasswordPage } from '../pages/reset-password/reset-password';
 import { BelaitPage } from '../pages/belait/belait';
 import { BeanaryPage } from '../pages/beanary/beanary';
-<<<<<<< HEAD
 import { AuthServiceProvider } from '../providers/auth-service/auth-service';
-=======
 import { BeanarymenulistPage } from '../pages/beanarymenulist/beanarymenulist';
 import { BeanarypicPage } from '../pages/beanarypic/beanarypic';
 import { SkmenuPage } from '../pages/skmenu/skmenu';
@@ -58,7 +56,6 @@ import { SkpicPage } from '../pages/skpic/skpic';
 
 
 
->>>>>>> d963f308b9254e824de884bac3e42367afc0199e
 
 @NgModule({
   declarations: [
