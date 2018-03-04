@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, LoadingController} from 'ionic-angular';
-import { MyProfilePage } from '../my-profile/my-profile';
 import { LoginPage } from '../login/login';
 import { RewardPage } from '../reward/reward';
+import { MyProfilePage } from '../my-profile/my-profile';
 
 @IonicPage()
 @Component({
