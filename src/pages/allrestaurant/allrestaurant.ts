@@ -4,6 +4,13 @@ import { SortPage } from '../sort/sort';
 import { FilterPage } from '../filter/filter';
 import { PizzaPage } from '../pizza/pizza';
 import { IdealPage } from '../ideal/ideal';
+import { MauriPage } from '../mauri/mauri';
+import { MeifangPage } from '../meifang/meifang';
+import { PutehPage } from '../puteh/puteh';
+import { SerikandiPage } from '../serikandi/serikandi';
+import { BeanaryPage } from '../beanary/beanary';
+import { KawanPage } from '../kawan/kawan';
+import { NtkPage } from '../ntk/ntk';
 
 @IonicPage()
 @Component({
@@ -38,6 +45,69 @@ export class AllrestaurantPage {
 
   goToIdeal(){
     this.navCtrl.push(IdealPage);
+    this.loadingCtrl.create({
+      content: 'Please wait...',
+      duration: 3000,
+      dismissOnPageChange: true
+    }).present();
+  }
+
+  goToMauri() {
+    this.navCtrl.push(MauriPage);
+    this.loadingCtrl.create({
+      content: 'Please wait...',
+      duration: 3000,
+      dismissOnPageChange: true
+    }).present();
+  }
+
+  goToMeifang() {
+    this.navCtrl.push(MeifangPage);
+    this.loadingCtrl.create({
+      content: 'Please wait...',
+      duration: 3000,
+      dismissOnPageChange: true
+    }).present();
+  }
+
+  goToPuteh() {
+    this.navCtrl.push(PutehPage);
+    this.loadingCtrl.create({
+      content: 'Please wait...',
+      duration: 3000,
+      dismissOnPageChange: true
+    }).present();
+  }
+
+  goToSerikandi(){
+    this.navCtrl.push(SerikandiPage);
+    this.loadingCtrl.create({
+      content: 'Please wait...',
+      duration: 3000,
+      dismissOnPageChange: true
+    }).present();
+  }
+
+  goToBeanary() {
+    this.navCtrl.push(BeanaryPage);
+    this.loadingCtrl.create({
+      content: 'Please wait...',
+      duration: 3000,
+      dismissOnPageChange: true
+    }).present();
+  }
+
+  goToKawan() {
+    this.navCtrl.push(KawanPage);
+    this.loadingCtrl.create({
+      content: 'Please wait...',
+      duration: 3000,
+      dismissOnPageChange: true
+    }).present();
+  }
+
+  goToNTK() {
+    this.navCtrl.push(NtkPage);
     this.loadingCtrl.create({
       content: 'Please wait...',
       duration: 3000,
