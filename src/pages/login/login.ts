@@ -33,7 +33,7 @@ export class LoginPage {
   login() {
     this.afAuth.auth.signInWithEmailAndPassword(this.loginData.email, this.loginData.password)
     .then(auth => {
-      this.navCtrl.push(HomePage);
+      this.navCtrl.setRoot(HomePage);
     })
     .catch(err => {
       // Handle error
