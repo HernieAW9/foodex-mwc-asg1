@@ -3,13 +3,6 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { IdealpixPage } from '../idealpix/idealpix';
 import { IdealmenuPage } from '../idealmenu/idealmenu';
 
-/**
- * Generated class for the IdealPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
 @IonicPage()
 @Component({
   selector: 'page-ideal',

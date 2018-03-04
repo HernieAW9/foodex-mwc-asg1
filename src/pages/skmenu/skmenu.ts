@@ -1,23 +1,18 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { SkmenuPage } from '../skmenu/skmenu';
-
 
 @IonicPage()
 @Component({
-  selector: 'page-serikandi',
-  templateUrl: 'serikandi.html',
+  selector: 'page-skmenu',
+  templateUrl: 'skmenu.html',
 })
-export class SerikandiPage {
+export class SkmenuPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SerikandiPage');
+    console.log('ionViewDidLoad SkmenuPage');
   }
 
-  goToSkmenu(){
-    this.navCtrl.push(SkmenuPage);
-  }
 }

@@ -40,6 +40,13 @@ import { MauripixPage } from '../pages/mauripix/mauripix';
 import { ResetPasswordPage } from '../pages/reset-password/reset-password';
 import { BelaitPage } from '../pages/belait/belait';
 import { BeanaryPage } from '../pages/beanary/beanary';
+import { BeanarymenulistPage } from '../pages/beanarymenulist/beanarymenulist';
+import { BeanarypicPage } from '../pages/beanarypic/beanarypic';
+import { SkmenuPage } from '../pages/skmenu/skmenu';
+import { SerikandiPage } from '../pages/serikandi/serikandi';
+
+
+
 
 @NgModule({
   declarations: [
@@ -75,7 +82,13 @@ import { BeanaryPage } from '../pages/beanary/beanary';
     BelaitPage,
     BeanaryPage,
     ResetPasswordPage,
-    BelaitPage
+    BelaitPage,
+    BeanarymenulistPage,
+    BeanarypicPage,
+    SkmenuPage,
+    SerikandiPage
+
+    
   ],
   imports: [
     BrowserModule,
@@ -118,7 +131,12 @@ import { BeanaryPage } from '../pages/beanary/beanary';
     BelaitPage,
     BeanaryPage,
     ResetPasswordPage,
-    BelaitPage
+    BelaitPage,
+    BeanarymenulistPage,
+    BeanarypicPage,
+    SkmenuPage,
+    SerikandiPage
+    
   ],
   providers: [
     StatusBar,

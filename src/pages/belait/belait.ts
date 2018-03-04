@@ -1,13 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 import { BeanaryPage } from '../beanary/beanary';
+import { SerikandiPage} from '../serikandi/serikandi';
 
-/**
- * Generated class for the BelaitPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -25,6 +20,15 @@ export class BelaitPage {
 
   goToBeanary(){
     this.navCtrl.push(BeanaryPage);
+    this.loadingCtrl.create({
+      content: 'Please wait...',
+      duration: 3000,
+      dismissOnPageChange: true
+    }).present();
+  }
+
+  goToSerikandi(){
+    this.navCtrl.push(SerikandiPage);
     this.loadingCtrl.create({
       content: 'Please wait...',
       duration: 3000,
