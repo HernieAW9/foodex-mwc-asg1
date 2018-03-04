@@ -1,40 +1,37 @@
 <ion-header>
 
-  <ion-navbar color="custom-color">
-    <ion-title>My Profile</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
-<ion-content padding>
+    <ion-navbar color="custom-color">
+      <ion-title>My Profile</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
 
     <ion-list>
+        <ion-item>Username:
+          <ion-note item-end>
+            {{(profileData$ | async) ?.username}}
+          </ion-note>
+        </ion-item> 
 
-      <ion-list>
-          <ion-list-header id="header">
-            Account
-          </ion-list-header>
+        <ion-item>
+        First Name: 
+        <ion-note item-end>
+        {{(profileData$ | async) ?.firstName}}
+        </ion-note>
+      </ion-item>
 
-          <a ion-item>
-            Username
-            <ion-note item-end>
-                User_01
+        <ion-item>Last Name: 
+          <ion-note item-end>
+            {{(profileData$ | async) ?.lastName}}
             </ion-note>
-          </a>
-
-          <a ion-item >
-              Email
-              <ion-note item-end>
-              User@hotmail.com
-              </ion-note>
-          </a>
-
-          <a ion-item >
-            Change Password
-          </a>
-        </ion-list>
-      
-      </ion-list>
-
-</ion-content>
+          </ion-item>
+    </ion-list>
+  
+  <button ion-button style="float: right" (click)="goToEditProfile()">Edit Profile</button>
+  
+  </ion-content>
+  
+  
