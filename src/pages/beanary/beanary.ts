@@ -1,12 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams,LoadingController } from 'ionic-angular';
+import { BeanarymenulistPage } from '../beanarymenulist/beanarymenulist';
+import { BeanarypicPage } from '../beanarypic/beanarypic';
 
-/**
- * Generated class for the BeanaryPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -21,6 +17,12 @@ export class BeanaryPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad BeanaryPage');
   }
+  goToBeanarymenulist(){
+    this.navCtrl.push(BeanarymenulistPage);
+  }
 
+  goToBeanarypic(){
+    this.navCtrl.push(BeanarypicPage);
+  }
   
 }
