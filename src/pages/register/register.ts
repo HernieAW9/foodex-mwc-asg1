@@ -2,7 +2,9 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, LoadingController, AlertController } from 'ionic-angular';
 import { LandingPage } from '../landing/landing';
 import { AngularFireAuth } from 'angularfire2/auth';
-import { HomePage } from '../home/home';
+import { LoginPage } from '../login/login';
+import { AngularFireDatabase } from 'angularfire2/database';
+import { Profile } from '../../models/profile';
 
 
 @IonicPage()
@@ -11,14 +13,15 @@ import { HomePage } from '../home/home';
   templateUrl: 'register.html',
 })
 export class RegisterPage {
-
+  profile = {} as Profile
+  
   signupData = {
     email: '',
     password: '',
     passwordRetyped: ''
   }
 
-  constructor(public afAuth: AngularFireAuth, public alertCtrl: AlertController,
+  constructor(public afAuth: AngularFireAuth, private afDatabase: AngularFireDatabase, public alertCtrl: AlertController,
     public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController) {
       this.signupData.email = this.navParams.get('email');
   }
@@ -45,7 +48,8 @@ export class RegisterPage {
     // Firebase Signup Code
     this.afAuth.auth.createUserWithEmailAndPassword(this.signupData.email, this.signupData.password)
     .then(auth => {
-      // Could do something with the Auth-Response
+      this.afDatabase.object(`profile/${auth.uid}`).set(this.profile)
+      this.navCtrl.push(LoginPage);
       console.log(auth);
     })
     .catch(err => {
