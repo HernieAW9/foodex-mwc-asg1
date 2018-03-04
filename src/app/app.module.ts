@@ -6,6 +6,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { FIREBASE_CONFIG } from './firebase.credentials';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -43,6 +44,9 @@ import { MeifangpixPage } from '../pages/meifangpix/meifangpix';
 import { MeifangmenuPage } from '../pages/meifangmenu/meifangmenu';
 import { PutehpixPage } from '../pages/putehpix/putehpix';
 import { PutehmenuPage } from '../pages/putehmenu/putehmenu';
+import { ResetPasswordPage } from '../pages/reset-password/reset-password';
+import { BelaitPage } from '../pages/belait/belait';
+import { BeanaryPage } from '../pages/beanary/beanary';
 
 @NgModule({
   declarations: [
@@ -74,13 +78,25 @@ import { PutehmenuPage } from '../pages/putehmenu/putehmenu';
     KawanPage,
     NtkPage,
     MauriPage,
-    MauripixPage
+    MauripixPage,
+    BelaitPage,
+    BeanaryPage,
+    ResetPasswordPage,
+    BelaitPage,
+    MaurimenuPage,
+    MeifangPage,
+    PutehPage,
+    MeifangpixPage,
+    MeifangmenuPage,
+    PutehpixPage,
+    PutehmenuPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(FIREBASE_CONFIG),
     AngularFireDatabaseModule,
+    AngularFireAuthModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -112,7 +128,18 @@ import { PutehmenuPage } from '../pages/putehmenu/putehmenu';
     KawanPage,
     NtkPage,
     MauriPage,
-    MauripixPage
+    MauripixPage,
+    BelaitPage,
+    BeanaryPage,
+    ResetPasswordPage,
+    BelaitPage,
+    MaurimenuPage,
+    MeifangPage,
+    PutehPage,
+    MeifangpixPage,
+    MeifangmenuPage,
+    PutehpixPage,
+    PutehmenuPage
   ],
   providers: [
     StatusBar,

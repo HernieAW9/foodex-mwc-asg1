@@ -14,36 +14,30 @@
       </ion-fab>
 
     <ion-list>
-
-        <ion-item>
-          <ion-label floating>Username</ion-label>
-          <ion-input type="text"></ion-input>
-        </ion-item>
-
-        <ion-item>
-            <ion-label floating>Email</ion-label>
-            <ion-input type="text"></ion-input>
-          </ion-item>
-      
-        <ion-item>
-          <ion-label floating>Password</ion-label>
-          <ion-input type="password"></ion-input>
-        </ion-item>
+      <ion-item>
+        <ion-label floating>E-mail</ion-label>
+        <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label floating>Password</ion-label>
+        <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+      </ion-item>
 
         <ion-item>
             <ion-label floating>Confirm Password</ion-label>
-            <ion-input type="password"></ion-input>
+            <ion-input type="password" [(ngModel)]="user.password"></ion-input>
           </ion-item>
       
       </ion-list>
 
       <ion-item no-lines>
           <ion-label>I agree with the
-            <a>Terms and Conditons</a>
+            <a>Terms and Conditons</a> 
           </ion-label>
           <ion-checkbox color="dark" checked="false"></ion-checkbox>
         </ion-item>
 
-      <button ion-button style="float:right" (click)="goToLogin()">Sign Up</button>
+      <button ion-button style="float:right" (click)="register(user)">Sign Up</button>
 
 </ion-content>
