@@ -47,6 +47,7 @@ import { PutehmenuPage } from '../pages/putehmenu/putehmenu';
 import { ResetPasswordPage } from '../pages/reset-password/reset-password';
 import { BelaitPage } from '../pages/belait/belait';
 import { BeanaryPage } from '../pages/beanary/beanary';
+import { AuthServiceProvider } from '../providers/auth-service/auth-service';
 
 @NgModule({
   declarations: [
@@ -144,7 +145,8 @@ import { BeanaryPage } from '../pages/beanary/beanary';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    AuthServiceProvider
   ]
 })
 export class AppModule {}

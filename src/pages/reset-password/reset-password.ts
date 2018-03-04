@@ -3,6 +3,7 @@ import { IonicPage, NavController, AlertController, NavParams, LoadingController
 import { FormBuilder, Validators } from '@angular/forms';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { HomePage } from '../home/home';
+import { AuthServiceProvider } from '../../providers/auth-service/auth-service';
 
 @IonicPage()
 @Component({
@@ -16,7 +17,7 @@ export class ResetPasswordPage {
   submitAttempt: boolean = false;
   loading: any;
 
-  constructor(public navCtrl: NavController, public authService: AngularFireAuthModule, public navParams: NavParams, public formBuilder: FormBuilder,public alertCtrl: AlertController, public loadingCtrl: LoadingController) {
+  constructor(public navCtrl: NavController, public authService: AuthServiceProvider, public navParams: NavParams, public formBuilder: FormBuilder,public alertCtrl: AlertController, public loadingCtrl: LoadingController) {
     let EMAIL_REGEXP = /^[a-z0-9!#$%&'*+\/=?^_`{|}~.-]+@[a-z0-9]([a-z0-9-]*[a-z0-9])?(\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)*$/i;
     this.resetpwdForm = formBuilder.group({
       email: ['', Validators.compose([Validators.required, Validators.pattern(EMAIL_REGEXP)])]
@@ -24,7 +25,7 @@ export class ResetPasswordPage {
   }
 
   elementChanged(input){
-    let field = input.inputControl.name;
+    let field = input.inputControl;
     this[field + "Changed"] = true;
   }
 
