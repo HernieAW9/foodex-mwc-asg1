@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
+import { IonicPage, NavController, ToastController, NavParams, LoadingController } from 'ionic-angular';
 import { RegisterPage } from '../register/register';
 import { LandingPage } from '../landing/landing';
-import { User } from '../models/user';
 import { AngularFireAuth } from 'angularfire2/auth'
 import { HomePage } from '../home/home';
 import { ResetPasswordPage } from '../reset-password/reset-password';
@@ -13,10 +12,14 @@ import { ResetPasswordPage } from '../reset-password/reset-password';
   templateUrl: 'login.html',
 })
 export class LoginPage {
-  user = {} as User;
+  loginData = {
+    email: '',
+    password: ''
+  }
   
   constructor(private afAuth: AngularFireAuth,
-    public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController) {
+    public navCtrl: NavController, public navParams: NavParams, 
+    public loadingCtrl: LoadingController, public toastCtrl: ToastController) {
   }
 
   ionViewDidLoad() {
@@ -24,19 +27,22 @@ export class LoginPage {
   }
 
   goToRegister() {
-    this.navCtrl.push(RegisterPage);
+    this.navCtrl.push(RegisterPage, { email: this.loginData.email});
   }
 
- async login(user: User) {
-    try{
-      const result = this.afAuth.auth.signInWithEmailAndPassword(user.email, user.password);
-      if(result){
-        this.navCtrl.push(HomePage);
-      }
-    }
-    catch(e){
-      console.error(e);
-    }
+  login() {
+    this.afAuth.auth.signInWithEmailAndPassword(this.loginData.email, this.loginData.password)
+    .then(auth => {
+      this.navCtrl.push(HomePage);
+    })
+    .catch(err => {
+      // Handle error
+      let toast = this.toastCtrl.create({
+        message: err.message,
+        duration: 1000
+      });
+      toast.present();
+    });
   }
 
   goToLanding() {
