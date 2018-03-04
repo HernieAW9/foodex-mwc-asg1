@@ -56,7 +56,7 @@ export class RegisterPage {
         buttons: ['OK']
       });
       alert.present();
-    });y
+    });
   }
 
 }
