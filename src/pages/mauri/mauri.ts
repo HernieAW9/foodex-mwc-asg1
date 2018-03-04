@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { MauripixPage } from '../mauripix/mauripix';
+import { MaurimenuPage } from '../maurimenu/maurimenu';
 
 /**
  * Generated class for the MauriPage page.
@@ -25,6 +26,10 @@ export class MauriPage {
 
   goToMauripix(){
     this.navCtrl.push(MauripixPage);
+  }
+
+goToMaurimenu(){
+    this.navCtrl.push(MaurimenuPage);
   }
 
 

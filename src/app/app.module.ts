@@ -37,6 +37,13 @@ import { KawanPage } from '../pages/kawan/kawan';
 import { NtkPage } from '../pages/ntk/ntk';
 import { MauriPage } from '../pages/mauri/mauri';
 import { MauripixPage } from '../pages/mauripix/mauripix';
+import { MaurimenuPage } from '../pages/maurimenu/maurimenu';
+import { MeifangPage } from '../pages/meifang/meifang';
+import { PutehPage } from '../pages/puteh/puteh';
+import { MeifangpixPage } from '../pages/meifangpix/meifangpix';
+import { MeifangmenuPage } from '../pages/meifangmenu/meifangmenu';
+import { PutehpixPage } from '../pages/putehpix/putehpix';
+import { PutehmenuPage } from '../pages/putehmenu/putehmenu';
 import { ResetPasswordPage } from '../pages/reset-password/reset-password';
 import { BelaitPage } from '../pages/belait/belait';
 import { BeanaryPage } from '../pages/beanary/beanary';
@@ -83,12 +90,22 @@ import { SerikandiPage } from '../pages/serikandi/serikandi';
     BeanaryPage,
     ResetPasswordPage,
     BelaitPage,
+<<<<<<< HEAD
     BeanarymenulistPage,
     BeanarypicPage,
     SkmenuPage,
     SerikandiPage
 
     
+=======
+    MaurimenuPage,
+    MeifangPage,
+    PutehPage,
+    MeifangpixPage,
+    MeifangmenuPage,
+    PutehpixPage,
+    PutehmenuPage
+>>>>>>> 639a0a9ead0394bf1544fb7813a55060580f6b16
   ],
   imports: [
     BrowserModule,
@@ -132,11 +149,21 @@ import { SerikandiPage } from '../pages/serikandi/serikandi';
     BeanaryPage,
     ResetPasswordPage,
     BelaitPage,
+<<<<<<< HEAD
     BeanarymenulistPage,
     BeanarypicPage,
     SkmenuPage,
     SerikandiPage
     
+=======
+    MaurimenuPage,
+    MeifangPage,
+    PutehPage,
+    MeifangpixPage,
+    MeifangmenuPage,
+    PutehpixPage,
+    PutehmenuPage
+>>>>>>> 639a0a9ead0394bf1544fb7813a55060580f6b16
   ],
   providers: [
     StatusBar,

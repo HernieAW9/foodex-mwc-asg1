@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, LoadingController} from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController, AlertController } from 'ionic-angular';
 import { LandingPage } from '../landing/landing';
-import { User } from '../models/user';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { HomePage } from '../home/home';
 
@@ -13,10 +12,15 @@ import { HomePage } from '../home/home';
 })
 export class RegisterPage {
 
-  user = {} as User;
+  signupData = {
+    email: '',
+    password: '',
+    passwordRetyped: ''
+  }
 
-  constructor(private afAuth: AngularFireAuth,
+  constructor(public afAuth: AngularFireAuth, public alertCtrl: AlertController,
     public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController) {
+      this.signupData.email = this.navParams.get('email');
   }
 
   ionViewDidLoad() {
@@ -27,14 +31,32 @@ export class RegisterPage {
     this.navCtrl.push(HomePage);
   }
 
-  async register(user: User) {
-    try{
-    const result = await this.afAuth.auth.createUserWithEmailAndPassword(user.email, user.password);
-    console.log(result);
-  }
-    catch(e) {
-      console.error(e)
+  register() {
+    if(this.signupData.password !== this.signupData.passwordRetyped) {
+      let alert = this.alertCtrl.create({
+        title: 'Error',
+        message: 'Your password and your re-entered password does not match each other.',
+	buttons: ['OK']
+      });
+      alert.present();
+      return;
     }
+
+    // Firebase Signup Code
+    this.afAuth.auth.createUserWithEmailAndPassword(this.signupData.email, this.signupData.password)
+    .then(auth => {
+      // Could do something with the Auth-Response
+      console.log(auth);
+    })
+    .catch(err => {
+      // Handle error
+      let alert = this.alertCtrl.create({
+        title: 'Error',
+        message: err.message,
+        buttons: ['OK']
+      });
+      alert.present();
+    });
   }
 
 }
