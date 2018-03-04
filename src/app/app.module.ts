@@ -54,6 +54,10 @@ import { SkmenuPage } from '../pages/skmenu/skmenu';
 import { SerikandiPage } from '../pages/serikandi/serikandi';
 import { SkpicPage } from '../pages/skpic/skpic';
 import { EditProfilePage } from '../pages/edit-profile/edit-profile';
+import { KmenuPage } from '../pages/kmenu/kmenu';
+import { KpicPage } from '../pages/kpic/kpic';
+import { NtkpixPage } from '../pages/ntkpix/ntkpix';
+import { NtkmenuPage } from '../pages/ntkmenu/ntkmenu';
 
 
 
@@ -105,7 +109,11 @@ import { EditProfilePage } from '../pages/edit-profile/edit-profile';
     PutehpixPage,
     PutehmenuPage,
     SkpicPage,
-    EditProfilePage 
+    EditProfilePage, 
+    KmenuPage,
+    KpicPage,
+    NtkpixPage,
+    NtkmenuPage
   ],
   imports: [
     BrowserModule,
@@ -161,7 +169,11 @@ import { EditProfilePage } from '../pages/edit-profile/edit-profile';
     PutehpixPage,
     PutehmenuPage,
     SkpicPage,
-    EditProfilePage 
+    EditProfilePage, 
+    KmenuPage,
+    KpicPage,
+    NtkpixPage,
+    NtkmenuPage 
     
   ],
   providers: [

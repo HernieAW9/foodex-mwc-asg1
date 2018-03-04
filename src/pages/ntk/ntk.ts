@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NtkpixPage } from '../ntkpix/ntkpix';
+import { NtkmenuPage } from '../ntkmenu/ntkmenu';
 
 @IonicPage()
 @Component({
@@ -13,6 +15,14 @@ export class NtkPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad NtkPage');
+  }
+
+  goToNtkpix(){
+    this.navCtrl.push(NtkpixPage);
+  }
+
+  goToNtkmenu(){
+    this.navCtrl.push(NtkmenuPage);
   }
 
 }

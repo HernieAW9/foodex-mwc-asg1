@@ -1,6 +1,6 @@
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="custom-color">
     <ion-title>New Tea Kopitiam</ion-title>
   </ion-navbar>
 
@@ -36,7 +36,7 @@
             </button> 
 
             <button ion-button icon-left outline small color="secondary"><ion-icon name="md-pin"></ion-icon> 
-              <p style="font-size:8px; text-align: left">Bangar, Temburong, Brunei</p>
+              <p style="font-size:8px; text-align: left">Bangar, Temburong,<br>Brunei Darussalam</p>
             </button>            
 
           </ion-col>
@@ -44,14 +44,14 @@
 
         <ion-row>
           <ion-col>
-              <button (click)="goToImages()" ion-button icon-left large round color="custom-color">
+              <button (click)="goToNtkpix()" ion-button icon-left large round color="custom-color">
                   <ion-icon name="ios-camera"></ion-icon> 
                   Images
                 </button>
           </ion-col>
 
           <ion-col>
-              <button (click)="goToMenulist()" ion-button icon-left large round color="custom-color">
+              <button (click)="goToNtkmenu()" ion-button icon-left large round color="custom-color">
                   <ion-icon name="ios-book"></ion-icon> 
                   Menu
                 </button>
@@ -59,7 +59,7 @@
         </ion-row>
       </ion-grid>
 
-      <b>REVIEW</b>
+      <b margin-left="50px">REVIEW</b>
 
       <ion-card>
 

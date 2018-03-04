@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the KawanPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { KmenuPage } from '../kmenu/kmenu';
+import { KpicPage } from '../kpic/kpic';
 
 @IonicPage()
 @Component({
@@ -20,6 +15,13 @@ export class KawanPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad KawanPage');
+  }
+
+  goToKawanmenu(){
+    this.navCtrl.push(KmenuPage);
+  }
+  goToKawanpic(){
+    this.navCtrl.push(KpicPage);
   }
 
 }
