@@ -28,7 +28,7 @@ export class RegisterPage {
   }
 
   goToLanding() {
-    this.navCtrl.push(HomePage);
+    this.navCtrl.push(LandingPage);
   }
 
   register() {
