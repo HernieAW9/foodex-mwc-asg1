@@ -53,6 +53,8 @@ import { BeanarypicPage } from '../pages/beanarypic/beanarypic';
 import { SkmenuPage } from '../pages/skmenu/skmenu';
 import { SerikandiPage } from '../pages/serikandi/serikandi';
 import { SkpicPage } from '../pages/skpic/skpic';
+import { NtkpixPage } from '../pages/ntkpix/ntkpix';
+import { NtkmenuPage } from '../pages/ntkmenu/ntkmenu';
 
 
 
@@ -103,7 +105,9 @@ import { SkpicPage } from '../pages/skpic/skpic';
     MeifangmenuPage,
     PutehpixPage,
     PutehmenuPage,
-    SkpicPage 
+    SkpicPage,
+    NtkpixPage,
+    NtkmenuPage
   ],
   imports: [
     BrowserModule,
@@ -158,7 +162,9 @@ import { SkpicPage } from '../pages/skpic/skpic';
     MeifangmenuPage,
     PutehpixPage,
     PutehmenuPage,
-    SkpicPage 
+    SkpicPage,
+    NtkpixPage,
+    NtkmenuPage 
     
   ],
   providers: [
