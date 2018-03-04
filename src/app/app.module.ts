@@ -53,13 +53,10 @@ import { BeanarypicPage } from '../pages/beanarypic/beanarypic';
 import { SkmenuPage } from '../pages/skmenu/skmenu';
 import { SerikandiPage } from '../pages/serikandi/serikandi';
 import { SkpicPage } from '../pages/skpic/skpic';
-<<<<<<< HEAD
 import { KmenuPage } from '../pages/kmenu/kmenu';
 import { KpicPage } from '../pages/kpic/kpic';
-=======
 import { NtkpixPage } from '../pages/ntkpix/ntkpix';
 import { NtkmenuPage } from '../pages/ntkmenu/ntkmenu';
->>>>>>> a989146b7146df470e0e6ceb71fcf814c8fde154
 
 
 
@@ -111,13 +108,10 @@ import { NtkmenuPage } from '../pages/ntkmenu/ntkmenu';
     PutehpixPage,
     PutehmenuPage,
     SkpicPage,
-<<<<<<< HEAD
     KmenuPage,
-    KpicPage
-=======
+    KpicPage,
     NtkpixPage,
     NtkmenuPage
->>>>>>> a989146b7146df470e0e6ceb71fcf814c8fde154
   ],
   imports: [
     BrowserModule,
@@ -173,13 +167,10 @@ import { NtkmenuPage } from '../pages/ntkmenu/ntkmenu';
     PutehpixPage,
     PutehmenuPage,
     SkpicPage,
-<<<<<<< HEAD
     KmenuPage,
-    KpicPage
-=======
+    KpicPage,
     NtkpixPage,
     NtkmenuPage 
->>>>>>> a989146b7146df470e0e6ceb71fcf814c8fde154
     
   ],
   providers: [
