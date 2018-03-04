@@ -16,17 +16,17 @@
     <ion-list>
       <ion-item>
         <ion-label floating>E-mail</ion-label>
-        <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+        <ion-input type="email" [(ngModel)]="signupData.email"></ion-input>
       </ion-item>
     
       <ion-item>
         <ion-label floating>Password</ion-label>
-        <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+        <ion-input type="password" [(ngModel)]="signupData.password"></ion-input>
       </ion-item>
 
         <ion-item>
             <ion-label floating>Confirm Password</ion-label>
-            <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+            <ion-input type="password" [(ngModel)]="signupData.passwordRetyped"></ion-input>
           </ion-item>
       
       </ion-list>
@@ -38,6 +38,6 @@
           <ion-checkbox color="dark" checked="false"></ion-checkbox>
         </ion-item>
 
-      <button ion-button style="float:right" (click)="register(user)">Sign Up</button>
+      <button ion-button style="float:right" (click)="register(user)" [disabled]="!signupData.email || !signupData.password || !signupData.passwordRetyped">Sign Up</button>
 
 </ion-content>
