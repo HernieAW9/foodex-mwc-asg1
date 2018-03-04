@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, AlertController, NavParams, LoadingController } from 'ionic-angular';
 import { FormBuilder, Validators } from '@angular/forms';
-import { AngularFireAuthModule } from 'angularfire2/auth';
-import { HomePage } from '../home/home';
 import { AuthServiceProvider } from '../../providers/auth-service/auth-service';
+import { HomePage } from '../home/home';
 
 @IonicPage()
 @Component({
@@ -29,32 +28,32 @@ export class ResetPasswordPage {
     this[field + "Changed"] = true;
   }
 
-  // resetPwd() {
-  //   if (!this.resetpwdForm.valid){
-  //     console.log(this.resetpwdForm.value);
-  //   } else {
-  //     this.authService.resetPassword(this.resetpwdForm.value.email).then( authService => {
-  //       this.navCtrl.setRoot(HomePage);
-  //     }, error => {
-  //       this.loading.dismiss().then( () => {
-  //         let alert = this.alertCtrl.create({
-  //           message: error.message,
-  //           buttons: [
-  //             {
-  //               text: "Ok",
-  //               role: 'cancel'
-  //             }
-  //           ]
-  //         });
-  //         alert.present();
-  //       });
-  //     });
+  resetPwd() {
+    if (!this.resetpwdForm.valid){
+      console.log(this.resetpwdForm.value);
+    } else {
+      this.authService.resetPassword(this.resetpwdForm.value.email).then( authService => {
+        this.navCtrl.setRoot(HomePage);
+      }, error => {
+        this.loading.dismiss().then( () => {
+          let alert = this.alertCtrl.create({
+            message: error.message,
+            buttons: [
+              {
+                text: "Ok",
+                role: 'cancel'
+              }
+            ]
+          });
+          alert.present();
+        });
+      });
 
-  //     this.loading = this.loadingCtrl.create({
-  //       dismissOnPageChange: true,
-  //     });
-  //     this.loading.present();
-  //   }
-  // }
+      this.loading = this.loadingCtrl.create({
+        dismissOnPageChange: true,
+      });
+      this.loading.present();
+    }
+  }
 
 }
