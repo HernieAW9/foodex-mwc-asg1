@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { MeifangpixPage } from '../meifangpix/meifangpix';
+import { MeifangmenuPage } from '../meifangmenu/meifangmenu';
 
 /**
  * Generated class for the MeifangPage page.
@@ -20,6 +22,14 @@ export class MeifangPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MeifangPage');
+  }
+
+  goToMeifangpix(){
+    this.navCtrl.push(MeifangpixPage);
+  }
+
+  goToMeifangmenu(){
+    this.navCtrl.push(MeifangmenuPage);
   }
 
 }
