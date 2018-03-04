@@ -51,6 +51,7 @@ import { BeanarymenulistPage } from '../pages/beanarymenulist/beanarymenulist';
 import { BeanarypicPage } from '../pages/beanarypic/beanarypic';
 import { SkmenuPage } from '../pages/skmenu/skmenu';
 import { SerikandiPage } from '../pages/serikandi/serikandi';
+import { SkpicPage } from '../pages/skpic/skpic';
 
 
 
@@ -90,22 +91,18 @@ import { SerikandiPage } from '../pages/serikandi/serikandi';
     BeanaryPage,
     ResetPasswordPage,
     BelaitPage,
-<<<<<<< HEAD
     BeanarymenulistPage,
     BeanarypicPage,
     SkmenuPage,
-    SerikandiPage
-
-    
-=======
+    SerikandiPage, 
     MaurimenuPage,
     MeifangPage,
     PutehPage,
     MeifangpixPage,
     MeifangmenuPage,
     PutehpixPage,
-    PutehmenuPage
->>>>>>> 639a0a9ead0394bf1544fb7813a55060580f6b16
+    PutehmenuPage,
+    SkpicPage 
   ],
   imports: [
     BrowserModule,
@@ -149,21 +146,19 @@ import { SerikandiPage } from '../pages/serikandi/serikandi';
     BeanaryPage,
     ResetPasswordPage,
     BelaitPage,
-<<<<<<< HEAD
     BeanarymenulistPage,
     BeanarypicPage,
     SkmenuPage,
-    SerikandiPage
-    
-=======
+    SerikandiPage, 
     MaurimenuPage,
     MeifangPage,
     PutehPage,
     MeifangpixPage,
     MeifangmenuPage,
     PutehpixPage,
-    PutehmenuPage
->>>>>>> 639a0a9ead0394bf1544fb7813a55060580f6b16
+    PutehmenuPage,
+    SkpicPage 
+    
   ],
   providers: [
     StatusBar,
