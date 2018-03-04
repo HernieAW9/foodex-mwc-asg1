@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { PutehpixPage } from '../putehpix/putehpix';
+import { PutehmenuPage } from '../putehmenu/putehmenu';
 
 /**
  * Generated class for the PutehPage page.
@@ -21,5 +23,14 @@ export class PutehPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad PutehPage');
   }
+
+  goToPutehpix(){
+    this.navCtrl.push(PutehpixPage);
+  }
+
+  goToPutehmenu(){
+    this.navCtrl.push(PutehmenuPage);
+  }
+
 
 }

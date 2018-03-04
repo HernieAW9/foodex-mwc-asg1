@@ -36,6 +36,13 @@ import { KawanPage } from '../pages/kawan/kawan';
 import { NtkPage } from '../pages/ntk/ntk';
 import { MauriPage } from '../pages/mauri/mauri';
 import { MauripixPage } from '../pages/mauripix/mauripix';
+import { MaurimenuPage } from '../pages/maurimenu/maurimenu';
+import { MeifangPage } from '../pages/meifang/meifang';
+import { PutehPage } from '../pages/puteh/puteh';
+import { MeifangpixPage } from '../pages/meifangpix/meifangpix';
+import { MeifangmenuPage } from '../pages/meifangmenu/meifangmenu';
+import { PutehpixPage } from '../pages/putehpix/putehpix';
+import { PutehmenuPage } from '../pages/putehmenu/putehmenu';
 
 @NgModule({
   declarations: [
