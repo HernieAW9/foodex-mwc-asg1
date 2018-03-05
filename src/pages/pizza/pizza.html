@@ -8,9 +8,9 @@
     <ion-fab top right edge>
         <button ion-fab mini color="secondary"><ion-icon name="ios-arrow-dropdown"></ion-icon></button>
         <ion-fab-list>
-          <button ion-fab><ion-icon name="ios-heart"></ion-icon></button>
-          <button ion-fab><ion-icon name="ios-bookmark"></ion-icon></button>
-          <button ion-fab><ion-icon name="ios-locate"></ion-icon></button>
+          <button ion-fab (click)="favThis()"><ion-icon name="ios-heart"></ion-icon></button>
+          <button ion-fab (click)="bookmarkThis()"><ion-icon name="ios-bookmark"></ion-icon></button>
+          <button ion-fab (click)="imHere()"><ion-icon name="ios-locate"></ion-icon></button>
         </ion-fab-list>
       </ion-fab>
 
@@ -21,7 +21,7 @@
           <ion-col>
             <b style="text-align:center; font-size:20px;"> Pizza Hut </b><br>
             
-            <button ion-button icon-left outline small outline color="secondary">
+            <button ion-button icon-left outline small outline color="secondary" (click)="info()">
                 <ion-icon name="ios-information-circle"></ion-icon> 
                 <p style="font-size:8px; text-align: left">Info</p>
               </button> 
@@ -56,6 +56,11 @@
       </ion-grid>
 
       <b margin-left="50px">REVIEW</b>
+
+      <div>
+          <ion-input class="inputbox" placeholder="Say something nice.."></ion-input>
+          <button ion-button small style="float:right">Submit</button>
+        </div>
 
       <ion-card>
 

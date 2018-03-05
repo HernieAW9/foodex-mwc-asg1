@@ -4,13 +4,6 @@ import { PizzaPage } from '../pizza/pizza';
 import { IdealPage } from '../ideal/ideal';
 import { MauriPage } from '../mauri/mauri';
 
-/**
- * Generated class for the BruneiPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
 @IonicPage()
 @Component({
   selector: 'page-brunei',

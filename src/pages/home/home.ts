@@ -2,6 +2,8 @@ import { Component, ViewChild} from '@angular/core';
 import { NavController, Slides } from 'ionic-angular';
 import { MenuPage } from '../menu/menu';
 import { ProfilePage } from '../profile/profile';
+import { PizzaPage } from '../pizza/pizza';
+import { BeanaryPage } from '../beanary/beanary';
 
 @Component({
   selector: 'page-home',
@@ -30,6 +32,14 @@ export class HomePage {
 
   prev() {
     this.slides.slidePrev();
+  }
+
+  pizzahut(){
+    this.navCtrl.push(PizzaPage);
+  }
+
+  beanery(){
+    this.navCtrl.push(BeanaryPage);
   }
 
 }
