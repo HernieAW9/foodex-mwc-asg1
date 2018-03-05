@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { RegisterPage } from '../register/register';
 import { LoginPage } from '../login/login';
-import { HomePage } from '../home/home';
 
 @IonicPage()
 @Component({
@@ -24,10 +23,6 @@ export class LandingPage {
 
   goToLogin() {
     this.navCtrl.push(LoginPage);
-  }
-
-  home() {
-    this.navCtrl.push(HomePage);
   }
 
 }
