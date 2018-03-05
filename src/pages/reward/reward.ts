@@ -24,10 +24,10 @@ export class RewardPage {
       title: 'Open in',
       buttons: [
         {
-          text: 'Map',
-          role: 'map',
+          text: 'QR Scanner',
+          role: 'scanner',
           handler: () => {
-            console.log('Map clicked');
+            console.log('scanner clicked');
           }
         },{
           text: 'Cancel',
