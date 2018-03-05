@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ActionSheetController } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
 
 @IonicPage()
@@ -12,7 +12,7 @@ export class RewardPage {
   redeemOpen: boolean;
   redeemResult;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
+  constructor(public actionSheetCtrl: ActionSheetController, public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
   }
 
   ionViewDidLoad() {
@@ -20,24 +20,25 @@ export class RewardPage {
   }
 
   showQR() {
-    let confirm = this.alertCtrl.create({
-      title: 'Open Scanner?',
+    let actionSheet = this.actionSheetCtrl.create({
+      title: 'Open in',
       buttons: [
         {
+          text: 'Map',
+          role: 'map',
+          handler: () => {
+            console.log('Map clicked');
+          }
+        },{
           text: 'Cancel',
+          role: 'cancel',
           handler: () => {
             console.log('Cancel clicked');
-          }
-        },
-        {
-          text: 'Okay',
-          handler: () => {
-            console.log('Okay clicked');
           }
         }
       ]
     });
-    confirm.present();
+    actionSheet.present();
   }
 
   showRedeem() {
